@@ -1,9 +1,15 @@
 # Vymazat posledny stlpec a spodne riadky
 # odstranit vsetky "~?" a ";"
+#odstranit . v F riadok 19; skryte znaky na konci v mEXP riadok 6-9
+#vymazat riadok 131
+# remove "in press"
+# NIKDY NEKOPIROVAT HODNOTY DO TABULKY
+# risk of bias stlpce vyhodit z data
+# premenovat SE_Exp a SE_ctrl na seExp
 
 # Read in the data
 # install required R libraries if not installed already
-list.of.packages <- c("car", "tidyverse", "psych", "metafor", "esc", "lme4", "ggplot2", "knitr", "puniform", "kableExtra", "lmerTest", "pwr", "Amelia", "multcomp", "magrittr")
+list.of.packages <- c("car", "tidyverse", "psych", "metafor", "esc", "lme4", "ggplot2", "knitr", "puniform", "kableExtra", "lmerTest", "pwr", "Amelia", "multcomp", "magrittr", "readxl")
 new.packages <- list.of.packages[!(list.of.packages %in% installed.packages()[,"Package"])]
 if(length(new.packages)) install.packages(new.packages)
 
@@ -12,8 +18,10 @@ lapply(list.of.packages, require, quietly = TRUE, warn.conflicts = FALSE, charac
 select <- dplyr::select
 
 dat <- read_excel("codingSheet.xlsx", sheet = "Data")
-
-dat <- dat %>% modify_at(., .at = c("F", "t", "r", "df1", "df2", "sdExp", "sdCtrl", "nExp", "nCtrl", "mExp", "mCtrl", "pubYear", "nMale", "nFemale"), .f = ~as.numeric(as.character(.)))
+#str(dat)
+#view(dat)
+dat <- dat %>% modify_at(., .at = c("pubYear"), .f = ~as.numeric(as.character(.)))
+#grepl("^[-]{0,1}[0-9]{0,}.{0,1}[0-9]{1,}$", dat$mExp)
 
 # Some data wrangling to get the right type of data (formatting of the raw dataset in Excel introduces a lot of junk otherwise)
 dat$pReported <- as.numeric(as.character(gsub("[^0-9.]", "", dat$pReported)))
@@ -24,8 +32,8 @@ dat$percFemale <- dat$nFemale/(dat$nFemale + dat$nMale)
 # Compute SDs from SEs and df2 from nTotal if not reported
 dat <- dat %>% mutate(nExp = ifelse(is.na(nExp) & !is.na(nTotal), nTotal/2, nExp),
                       nCtrl = ifelse(is.na(nCtrl) & !is.na(nTotal), nTotal/2, nCtrl),
-                      sdExp = ifelse(is.na(sdExp) & !is.na(SE_Exp), SE_Exp*sqrt(nExp), sdExp),
-                      sdCtrl = ifelse(is.na(sdCtrl) & !is.na(SE_CTRL), SE_CTRL*sqrt(nCtrl), sdCtrl),
+                      sdExp = ifelse(is.na(sdExp) & !is.na(seExp), seExp*sqrt(nExp), sdExp),
+                      sdCtrl = ifelse(is.na(sdCtrl) & !is.na(seCtrl), seCtrl*sqrt(nCtrl), sdCtrl),
                       df2 = ifelse(is.na(df2) & !is.na(nTotal), nTotal - 2, df2)) # Change if other than 2 group designs are present
 
 dat <- escalc(measure = "SMD", m1i = mExp, m2i = mCtrl, sd1i = sdExp, sd2i = sdCtrl, n1i = nExp, n2i = nCtrl, data = dat)
@@ -104,21 +112,40 @@ dat %>% filter(finalDesign == "cor") %>% select(yiConv, r, rVar, viConv, p, ni, 
 # Variable computations
 # # Multiply the ES by -1 if not in the opposite direction
 dat <- dat %>% mutate(yi = ifelse(is.na(yi) & (!is.na(yiConv) & !is.na(predictedDirection)), predictedDirection * yiConv, yi),
-                      vi = ifelse(is.na(yi) & (!is.na(yiConv) & !is.na(predictedDirection)), viConv, vi),
+                      vi = ifelse(is.na(vi) & (!is.na(viConv) & !is.na(predictedDirection)), viConv, vi),
                       label = paste(paperID, "/", studyID, "/", effectID, sep = ""),
                       ni = ifelse(is.na(ni), nExp + nCtrl, ni),
-                      nTerm = 2/ni)
-                      
-dat %>% select(label, yi, yiConv, dReported, mExp, mCtrl, sdExp, sdCtrl, SE_Exp, SE_CTRL, nExp, nCtrl, predictedDirection, F, t, r) %>% view()
+                      nTerm = 2/ni,
+                      persuasiveMechanicImpl = ifelse(persuasive_mechanic == "Perspective-taking", 0, ifelse(is.na(persuasive_mechanic), NA, 1)),
+                      persuasiveMechanicExpl = ifelse(persuasive_mechanic == "Stereotype rehearsal", 0, ifelse(is.na(persuasive_mechanic), NA, 1)),
+                      gamegenreBinary = ifelse(gamegenre %in% c("action game", "action violent game"), "action games", ifelse(is.na(gamegenre), NA, "non-action games")),
+                      inLabAdministrationBinary <- ifelse(inLabAdministration == 1, 1, ifelse(is.na(inLabAdministration), NA, 0)),
+                      Att_type_exp_imp <- factor(as.numeric(Att_type_exp_imp), levels = c(0, 1)))
 
+# GRIM & GRIMMER Test
+dat <- dat %>% mutate(items = ifelse(is.na(items), 0, items))
+grim(dat)
+grimmer(dat)
 
-dat %>% filter(ni != nTotal) %>% select(ni, nTotal, df2, nExp, nCtrl)
-dat %>% filter(abs(dReported - gConv) > .2) %>% select(result, gConv, dReported)
+# Create dats objects
+rob2 <- read_delim("ROB2_IRPG_beta_v8.csv", delim = ";")
+data <- left_join(dat, rob2[,-8], by = "paperID") %>% mutate(overallBias = factor(overallBias, levels = c("Low", "Some concerns", "High"))) %>% filter(!is.na(yi))
+datExplicit <- data %>% filter(Att_type_exp_imp == 1)
+datImplicit <- data %>% filter(Att_type_exp_imp == 0)
 
-dat$studentSample <- ifelse(dat$sampleType == "student", 1, ifelse(dat$sampleType == "general", 0, NA))
+# Remove outliers (based on the results from the maDiag script)
+# dat <- dat %>% filter(!result %in% c())
+
+# dat %>% select(label, yi, vi, yiConv, dReported, predictedDirection, mExp, mCtrl, sdExp, sdCtrl, seExp, seCtrl, nExp, nCtrl, df2, F, t, r) %>% view()
+
+# dat %>% filter(ni != nTotal) %>% select(ni, nTotal, df2, nExp, nCtrl)
+# dat %>% filter(abs(dReported - gConv) > .2) %>% select(result, gConv, dReported)
+# 
+# dat$studentSample <- ifelse(dat$sampleType == "student", 1, ifelse(dat$sampleType == "general", 0, NA))
 
 # Remove outliers (based on the results from the maDiag script)
 # dat <- dat %>% filter(!result %in% c(194))
 
 # Create dat objects
 # Mood and overall effect data objects
+

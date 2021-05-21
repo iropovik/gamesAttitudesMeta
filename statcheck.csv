@@ -1,0 +1,541 @@
+"Source","Statistic","df1","df2","Test.Comparison","Value","Reported.Comparison","Reported.P.Value","Computed","Raw","Error","DecisionError","OneTail","OneTailedInTxt","APAfactor"
+"11_Greer_2017_Using a computer game to teach school-aged children about asthma","t",NA,153,"=",0.05,"=",0.96,0.960187602454067,"t(153) = .05, p = .96",FALSE,FALSE,FALSE,FALSE,1
+"11_Greer_2017_Using a computer game to teach school-aged children about asthma","F",1,152,"=",21.43,"<",0.001,7.81458084684455e-06,"F(1, 152) = 21.43, p < .001",FALSE,FALSE,FALSE,FALSE,1
+"11_Greer_2017_Using a computer game to teach school-aged children about asthma","F",1,152,"=",10.43,"=",0.002,0.00151953077734654,"F(1, 152) =
+10.43, p = .002",FALSE,FALSE,FALSE,FALSE,1
+"11_Greer_2017_Using a computer game to teach school-aged children about asthma","t",NA,153,"=",0.47,"=",0.3,0.639024237043878,"t(153) = .47, p = .30",TRUE,FALSE,FALSE,FALSE,1
+"11_Greer_2017_Using a computer game to teach school-aged children about asthma","F",1,152,"=",4.06,"=",0.05,0.0456735187736623,"F(1, 152) = 4.06, p = .05",FALSE,FALSE,FALSE,FALSE,1
+"11_Greer_2017_Using a computer game to teach school-aged children about asthma","F",1,152,"=",7.81,"=",0.006,0.00586582255330618,"F(1, 152) = 7.81, p = .006",FALSE,FALSE,FALSE,FALSE,1
+"18_Teng_2011_Grand Theft Auto IV comes to Singapore","F",1,128,"=",10.4,"<",0.01,0.00159947846038985,"F(1, 128) = 10.4, p < 0.01",FALSE,FALSE,FALSE,FALSE,0.71
+"18_Teng_2011_Grand Theft Auto IV comes to Singapore","F",1,128,"=",4.26,"<",0.05,0.0410402394359519,"F(1, 128) = 4.26, p < 0.05",FALSE,FALSE,FALSE,FALSE,0.71
+"18_Teng_2011_Grand Theft Auto IV comes to Singapore","F",1,128,"=",5.65,"<",0.05,0.0189364159889914,"F(1, 128) = 5.65, p < 0.05",FALSE,FALSE,FALSE,FALSE,0.71
+"18_Teng_2011_Grand Theft Auto IV comes to Singapore","F",1,128,"=",4.2,"<",0.05,0.0424669210626292,"F(1, 128) = 4.20, p < 0.05",FALSE,FALSE,FALSE,FALSE,0.71
+"18_Teng_2011_Grand Theft Auto IV comes to Singapore","F",1,128,"=",18.1,"<",0.001,4.01530052103313e-05,"F(1, 128) = 18.1, p < 0.001",FALSE,FALSE,FALSE,FALSE,0.71
+"19_Behm-Morawitz_2016_The virtual threat effect","F",5,43,"=",2.62,"<",0.05,0.0373380537516226,"F(5,
+43) = 2.62, p < 0.05",FALSE,FALSE,FALSE,FALSE,0.43
+"19_Behm-Morawitz_2016_The virtual threat effect","F",5,43,"=",7.38,"<",0.001,4.53478638395762e-05,"F(5, 43) = 7.38, p < 0.001",FALSE,FALSE,FALSE,FALSE,0.43
+"19_Behm-Morawitz_2016_The virtual threat effect","F",5,44,"=",2.2,"=",0.08,0.0712962519511926,"F(5, 44) = 2.20, p = 0.08",TRUE,FALSE,FALSE,FALSE,0.43
+"19_Behm-Morawitz_2016_The virtual threat effect","F",5,44,"=",5.86,"<",0.05,0.00031189378865018,"F(5, 44) = 5.86,
+p < 0.05",FALSE,FALSE,FALSE,FALSE,0.43
+"19_Behm-Morawitz_2016_The virtual threat effect","F",1,106,"=",5.51,"=",0.02,0.0207651211519517,"F(1, 106) = 5.51, p = 0.02",FALSE,FALSE,FALSE,FALSE,0.43
+"19_Behm-Morawitz_2016_The virtual threat effect","F",1,103,"=",0.072,"=",0.79,0.788983403218439,"F(1, 103) = 0.072, p = 0.79",FALSE,FALSE,FALSE,FALSE,0.43
+"1_Kampf_2016_Long-Term Effects of Computerized Simulations in Protracted Conflicts","F",3,176,"=",71.03,"<",1e-04,3.78884398313233e-30,"F(3,
+176) = 71.03, p < .0001",FALSE,FALSE,FALSE,FALSE,0.5
+"22_Jacobs_2018_Play to win over","F",1,151,"=",5.9,"=",0.017,0.0163152042996538,"F(1,151)= 5.9, p=.017",FALSE,FALSE,FALSE,TRUE,0.77
+"22_Jacobs_2018_Play to win over","F",1,151,"=",69.452,"<",0.001,4.45787067811082e-14,"F(1, 151)=69.452, p<.001",FALSE,FALSE,FALSE,TRUE,0.77
+"22_Jacobs_2018_Play to win over","F",1,235,"=",125.3,"<",0.001,1.36254798058157e-23,"F(1,235)= 125.3, p<.001",FALSE,FALSE,FALSE,TRUE,0.77
+"22_Jacobs_2018_Play to win over","F",1,235,"=",4.1,"=",0.044,0.0440141686426696,"F(1,235)= 4.1, p=.044",FALSE,FALSE,FALSE,TRUE,0.77
+"22_Jacobs_2018_Play to win over","F",1,231,"=",28,"<",0.001,2.81564940243377e-07,"F(1,231)= 28.0,
+p<.001",FALSE,FALSE,FALSE,TRUE,0.77
+"22_Jacobs_2018_Play to win over","F",1,110,"=",29.6,"<",0.001,3.24759254350696e-07,"F(1, 110)= 29.6, p<.001",FALSE,FALSE,FALSE,TRUE,0.77
+"22_Jacobs_2018_Play to win over","F",1,110,"=",15.2,"<",0.001,0.000166687691836482,"F(1, 110)= 15.2, p<.001",FALSE,FALSE,FALSE,TRUE,0.77
+"22_Jacobs_2018_Play to win over","F",1,110,"=",10.3,"=",0.002,0.00174361039074544,"F(1, 110)= 10.3, p=.002",FALSE,FALSE,FALSE,TRUE,0.77
+"22_Jacobs_2018_Play to win over","F",1,110,"=",15.5,"<",0.001,0.000145022602404159,"F(1, 110)= 15.5, p<.001",FALSE,FALSE,FALSE,TRUE,0.77
+"22_Jacobs_2018_Play to win over","F",1,110,"=",14.9,"<",0.001,0.000191679915015475,"F(1, 110)= 14.9, p<.001",FALSE,FALSE,FALSE,TRUE,0.77
+"22_Jacobs_2018_Play to win over","F",1,110,"=",7.2,"=",0.008,0.0084161729439147,"F(1, 110)= 7.2, p=.008",FALSE,FALSE,FALSE,TRUE,0.77
+"22_Jacobs_2018_Play to win over","r",NA,237,"=",0.56,"<",0.001,3.94853427677261e-21,"r(237)= .56, p<.001",FALSE,FALSE,FALSE,TRUE,0.77
+"22_Jacobs_2018_Play to win over","t",NA,110,"=",3.7,"<",0.001,0.000338410118538318,"t(110)= 3.7, p<.001",FALSE,FALSE,FALSE,TRUE,0.77
+"22_Jacobs_2018_Play to win over","t",NA,110,"=",-2,"=",0.052,0.0479646526908604,"t(110)= -2.0, p= .052",FALSE,FALSE,FALSE,TRUE,0.77
+"22_Jacobs_2018_Play to win over","t",NA,110,"=",2,"=",0.046,0.0479646526908604,"t(110)= 2.0, p= .046",FALSE,FALSE,FALSE,TRUE,0.77
+"22_Jacobs_2018_Play to win over","t",NA,110,"=",1.9,"=",0.054,0.0600514583903702,"t(110)= 1.9, p= .054",FALSE,FALSE,FALSE,TRUE,0.77
+"22_Jacobs_2018_Play to win over","F",1,123,"=",5.5,"=",0.021,0.0206175824767313,"F(1, 123)= 5.5, p=.021",FALSE,FALSE,FALSE,TRUE,0.77
+"26_Hammer_Playing prejudice The impact of game-play on attributions of gender and racial bias - kopie","F",1,408,"=",4.787,"=",0.029,0.0292419579345374,"F(1, 408) =
+4.787, p = .029",FALSE,FALSE,FALSE,FALSE,0.94
+"26_Hammer_Playing prejudice The impact of game-play on attributions of gender and racial bias - kopie","F",1,219,"=",50.803,"<",0.001,1.461211424984e-11,"F(1,
+219) = 50.803, p < .001",FALSE,FALSE,FALSE,FALSE,0.94
+"26_Hammer_Playing prejudice The impact of game-play on attributions of gender and racial bias - kopie","F",1,219,"=",47.561,"<",0.001,5.63343526452703e-11,"F(1,
+219) = 47.561, p < .001",FALSE,FALSE,FALSE,FALSE,0.94
+"26_Hammer_Playing prejudice The impact of game-play on attributions of gender and racial bias - kopie","F",1,219,"=",45.075,"<",0.001,1.6052170739575e-10,"F(1,
+219) = 45.075, p < .001",FALSE,FALSE,FALSE,FALSE,0.94
+"26_Hammer_Playing prejudice The impact of game-play on attributions of gender and racial bias - kopie","F",1,219,"=",95.392,"<",0.001,6.18448786844657e-19,"F(1,
+219) = 95.392, p < .001",FALSE,FALSE,FALSE,FALSE,0.94
+"26_Hammer_Playing prejudice The impact of game-play on attributions of gender and racial bias - kopie","F",1,226,"=",2.384,"=",0.124,0.123982388130208,"F(1,226) = 2.384, p = .124",FALSE,FALSE,FALSE,FALSE,0.94
+"26_Hammer_Playing prejudice The impact of game-play on attributions of gender and racial bias - kopie","F",1,243,"=",0.21,"=",0.647,0.647176947759745,"F(1, 243) = .210, p = .647",FALSE,FALSE,FALSE,FALSE,0.94
+"26_Hammer_Playing prejudice The impact of game-play on attributions of gender and racial bias - kopie","F",1,243,"=",2.489,"=",0.116,0.115945428378436,"F(1, 243) = 2.489, p = .116",FALSE,FALSE,FALSE,FALSE,0.94
+"26_Hammer_Playing prejudice The impact of game-play on attributions of gender and racial bias - kopie","F",1,243,"=",0.223,"=",0.637,0.637187312099463,"F(1, 243) = .223, p = .637",FALSE,FALSE,FALSE,FALSE,0.94
+"26_Hammer_Playing prejudice The impact of game-play on attributions of gender and racial bias - kopie","F",1,243,"=",5.06,"=",0.025,0.0253801232882695,"F(1,243) = 5.060, p = .025",FALSE,FALSE,FALSE,FALSE,0.94
+"26_Hammer_Playing prejudice The impact of game-play on attributions of gender and racial bias - kopie","F",1,218,"=",4.3,"=",0.039,0.0392872812539798,"F(1,218) = 4.3, p = .039",FALSE,FALSE,FALSE,FALSE,0.94
+"26_Hammer_Playing prejudice The impact of game-play on attributions of gender and racial bias - kopie","F",1,218,"=",9.011,"=",0.003,0.00299652401303713,"F(1,218) = 9.011, p = .003",FALSE,FALSE,FALSE,FALSE,0.94
+"26_Hammer_Playing prejudice The impact of game-play on attributions of gender and racial bias - kopie","F",1,218,"=",0.698,"=",0.404,0.404371254082195,"F(1,218)
+= .698, p = .404",FALSE,FALSE,FALSE,FALSE,0.94
+"26_Hammer_Playing prejudice The impact of game-play on attributions of gender and racial bias - kopie","F",1,218,"=",0.217,"=",0.642,0.641800411737112,"F(1,218) = .217, p = .642",FALSE,FALSE,FALSE,FALSE,0.94
+"26_Hammer_Playing prejudice The impact of game-play on attributions of gender and racial bias - kopie","F",3,101,"=",3.695,"=",0.014,0.0142984871568053,"F(3,101) = 3.695, p
+= .014",FALSE,FALSE,FALSE,FALSE,0.94
+"26_Hammer_Playing prejudice The impact of game-play on attributions of gender and racial bias - kopie","F",1,101,"=",5.192,"=",0.025,0.0247962852739551,"F(1,101) = 5.192, p = .025",FALSE,FALSE,FALSE,FALSE,0.94
+"26_Hammer_Playing prejudice The impact of game-play on attributions of gender and racial bias - kopie","t",NA,42,"=",3.478,"<",0.001,0.00118919275207468,"t(42) = 3.478, p < .001",TRUE,FALSE,FALSE,FALSE,0.94
+"26_Hammer_Playing prejudice The impact of game-play on attributions of gender and racial bias - kopie","t",NA,24,"=",0.156,"=",0.88,0.877337778790495,"t(24) = .156, p = .880",TRUE,FALSE,FALSE,FALSE,0.94
+"26_Hammer_Playing prejudice The impact of game-play on attributions of gender and racial bias - kopie","t",NA,27,"=",-1.07,"=",0.294,0.294091922102764,"t(27) = -1.070, p = .294",FALSE,FALSE,FALSE,FALSE,0.94
+"26_Hammer_Playing prejudice The impact of game-play on attributions of gender and racial bias - kopie","t",NA,25,"=",1.397,"=",0.175,0.174691662235117,"t(25) = 1.397, p = .175",FALSE,FALSE,FALSE,FALSE,0.94
+"26_Hammer_Playing prejudice The impact of game-play on attributions of gender and racial bias - kopie","F",3,101,"=",1.549,"=",0.932,0.206514700143545,"F(3,101) = 1.549, p = .932",TRUE,FALSE,FALSE,FALSE,0.94
+"26_Hammer_Playing prejudice The impact of game-play on attributions of gender and racial bias - kopie","t",NA,122,"=",-0.649,"=",0.517,0.517558250656073,"t(122) = -.649, p = .517",FALSE,FALSE,FALSE,FALSE,0.94
+"26_Hammer_Playing prejudice The impact of game-play on attributions of gender and racial bias - kopie","r",NA,70,"=",0.18,"=",0.13,0.130277795896878,"r(70) = .180, p = .130",FALSE,FALSE,FALSE,FALSE,0.94
+"26_Hammer_Playing prejudice The impact of game-play on attributions of gender and racial bias - kopie","r",NA,99,"=",-0.038,"=",0.706,0.705966996745577,"r(99) = -.038, p = .706",FALSE,FALSE,FALSE,FALSE,0.94
+"26_Hammer_Playing prejudice The impact of game-play on attributions of gender and racial bias - kopie","r",NA,99,"=",-0.054,"=",0.59,0.591730639926952,"r(99) = -.054, p = .590",FALSE,FALSE,FALSE,FALSE,0.94
+"26_Hammer_Playing prejudice The impact of game-play on attributions of gender and racial bias - kopie","r",NA,100,"=",0.157,"=",0.115,0.115055810782345,"r(100) = .157, p = .115",FALSE,FALSE,FALSE,FALSE,0.94
+"26_Hammer_Playing prejudice The impact of game-play on attributions of gender and racial bias - kopie","F",1,119,"=",0.056,"=",0.814,0.813340475091224,"F(1,119) = .056, p = .814",FALSE,FALSE,FALSE,FALSE,0.94
+"26_Hammer_Playing prejudice The impact of game-play on attributions of gender and racial bias - kopie","r",NA,70,"=",0.059,"=",0.621,0.622507965265691,"r(70) = .059, p = .621",FALSE,FALSE,FALSE,FALSE,0.94
+"26_Hammer_Playing prejudice The impact of game-play on attributions of gender and racial bias - kopie","r",NA,99,"=",0.032,"=",0.732,0.750731935416541,"r(99) = .032, p = .732",TRUE,FALSE,FALSE,FALSE,0.94
+"26_Hammer_Playing prejudice The impact of game-play on attributions of gender and racial bias - kopie","r",NA,99,"=",-0.039,"=",0.697,0.698597883131921,"r(99) = -.039, p = .697",FALSE,FALSE,FALSE,FALSE,0.94
+"26_Hammer_Playing prejudice The impact of game-play on attributions of gender and racial bias - kopie","r",NA,100,"=",0.165,"=",0.097,0.0974668481632965,"r(100) = .165, p = .097",FALSE,FALSE,FALSE,FALSE,0.94
+"26_Hammer_Playing prejudice The impact of game-play on attributions of gender and racial bias - kopie","F",1,119,"=",2.888,"=",0.092,0.09185429555894,"F(1,119) = 2.888, p = .092",FALSE,FALSE,FALSE,FALSE,0.94
+"26_Hammer_Playing prejudice The impact of game-play on attributions of gender and racial bias - kopie","F",2,114,"=",0.001,"=",0.999,0.999000508596435,"F(2,114)
+= .001, p = .999",FALSE,FALSE,FALSE,FALSE,0.94
+"26_Hammer_Playing prejudice The impact of game-play on attributions of gender and racial bias - kopie","F",2,171,"=",3.054,"=",0.055,0.0497511531891024,"F(2,171) = 3.054, p = .055",TRUE,TRUE,FALSE,FALSE,0.94
+"26_Hammer_Playing prejudice The impact of game-play on attributions of gender and racial bias - kopie","F",2,170,"=",1.058,"=",0.349,0.349423844585144,"F(2, 170) = 1.058, p = .349",FALSE,FALSE,FALSE,FALSE,0.94
+"26_Hammer_Playing prejudice The impact of game-play on attributions of gender and racial bias - kopie","F",2,171,"=",0.944,"=",0.391,0.391086419341498,"F(2, 171) = .944, p = .391",FALSE,FALSE,FALSE,FALSE,0.94
+"26_Hammer_Playing prejudice The impact of game-play on attributions of gender and racial bias - kopie","F",3,59,"=",1.496,"=",0.225,0.224965823179835,"F(3,59)
+= 1.496, p = .225",FALSE,FALSE,FALSE,FALSE,0.94
+"26_Hammer_Playing prejudice The impact of game-play on attributions of gender and racial bias - kopie","F",3,59,"=",0.866,"=",0.464,0.463881297314914,"F(3,59) = .866, p = .464",FALSE,FALSE,FALSE,FALSE,0.94
+"26_Hammer_Playing prejudice The impact of game-play on attributions of gender and racial bias - kopie","F",3,106,"=",0.066,"=",0.978,0.977791707274786,"F(3,106) = .066, p = .978",FALSE,FALSE,FALSE,FALSE,0.94
+"26_Hammer_Playing prejudice The impact of game-play on attributions of gender and racial bias - kopie","F",3,106,"=",0.283,"=",0.838,0.837572969283743,"F(3,106) = .283, p = .838",FALSE,FALSE,FALSE,FALSE,0.94
+"26_Hammer_Playing prejudice The impact of game-play on attributions of gender and racial bias - kopie","F",3,116,"=",1.265,"=",0.29,0.289727466892832,"F(3,116) = 1.265, p = .290",FALSE,FALSE,FALSE,FALSE,0.94
+"26_Hammer_Playing prejudice The impact of game-play on attributions of gender and racial bias - kopie","F",3,116,"=",0.594,"=",0.62,0.620163457040491,"F(3,116) = .594, p = .620",FALSE,FALSE,FALSE,FALSE,0.94
+"26_Hammer_Playing prejudice The impact of game-play on attributions of gender and racial bias - kopie","F",3,101,"=",0.525,"=",0.666,0.666087742361788,"F(3,101) = .525, p = .666",FALSE,FALSE,FALSE,FALSE,0.94
+"26_Hammer_Playing prejudice The impact of game-play on attributions of gender and racial bias - kopie","t",NA,121,"=",1.756,"=",0.082,0.0816186568414422,"t(121) = 1.756, p = .082",FALSE,FALSE,FALSE,FALSE,0.94
+"26_Hammer_Playing prejudice The impact of game-play on attributions of gender and racial bias - kopie","F",3,101,"=",2.993,"=",0.034,0.0344157725854054,"F(3,101) = 2.993, p = .034",FALSE,FALSE,FALSE,FALSE,0.94
+"26_Hammer_Playing prejudice The impact of game-play on attributions of gender and racial bias - kopie","F",1,101,"=",0.084,"=",0.773,0.772542347352967,"F(1,101) = .084, p = .773",FALSE,FALSE,FALSE,FALSE,0.94
+"26_Hammer_Playing prejudice The impact of game-play on attributions of gender and racial bias - kopie","t",NA,42,"=",-6.849,"<",0.001,2.39070050986439e-08,"t(42) = -6.849, p < .001",FALSE,FALSE,FALSE,FALSE,0.94
+"26_Hammer_Playing prejudice The impact of game-play on attributions of gender and racial bias - kopie","t",NA,24,"=",-4.313,"<",0.001,0.000238296780332757,"t(24) = -4.313, p < .001",FALSE,FALSE,FALSE,FALSE,0.94
+"26_Hammer_Playing prejudice The impact of game-play on attributions of gender and racial bias - kopie","t",NA,27,"=",-4.571,"<",0.001,9.64521371630471e-05,"t(27) = -4.571, p < .001",FALSE,FALSE,FALSE,FALSE,0.94
+"26_Hammer_Playing prejudice The impact of game-play on attributions of gender and racial bias - kopie","t",NA,25,"=",-6.426,"<",0.001,9.95424892728735e-07,"t(25) = -6.426, p < .001",FALSE,FALSE,FALSE,FALSE,0.94
+"26_Hammer_Playing prejudice The impact of game-play on attributions of gender and racial bias - kopie","r",NA,70,"=",-0.121,"=",0.313,0.311310534462936,"r(70) = -.121, p = .313",FALSE,FALSE,FALSE,FALSE,0.94
+"26_Hammer_Playing prejudice The impact of game-play on attributions of gender and racial bias - kopie","r",NA,99,"=",-0.021,"=",0.834,0.834882776182451,"r(99) = -.021, p = .834",FALSE,FALSE,FALSE,FALSE,0.94
+"26_Hammer_Playing prejudice The impact of game-play on attributions of gender and racial bias - kopie","r",NA,99,"=",-0.011,"=",0.916,0.913062981763478,"r(99) = -.011, p = .916",FALSE,FALSE,FALSE,FALSE,0.94
+"26_Hammer_Playing prejudice The impact of game-play on attributions of gender and racial bias - kopie","r",NA,100,"=",0.042,"=",0.673,0.675116436523593,"r(100) = .042, p = .673",FALSE,FALSE,FALSE,FALSE,0.94
+"26_Hammer_Playing prejudice The impact of game-play on attributions of gender and racial bias - kopie","F",1,119,"=",0.793,"=",0.375,0.374991382480935,"F(1,119)
+= .793, p = .375",FALSE,FALSE,FALSE,FALSE,0.94
+"26_Hammer_Playing prejudice The impact of game-play on attributions of gender and racial bias - kopie","r",NA,70,"=",0.081,"=",0.497,0.498792051164789,"r(70) = .081, p = .497",FALSE,FALSE,FALSE,FALSE,0.94
+"26_Hammer_Playing prejudice The impact of game-play on attributions of gender and racial bias - kopie","r",NA,99,"=",-0.085,"=",0.398,0.398034129276884,"r(99) = -.085, p = .398",FALSE,FALSE,FALSE,FALSE,0.94
+"26_Hammer_Playing prejudice The impact of game-play on attributions of gender and racial bias - kopie","r",NA,99,"=",0.039,"=",0.7,0.698597883131921,"r(99) = .039, p = .700",FALSE,FALSE,FALSE,FALSE,0.94
+"26_Hammer_Playing prejudice The impact of game-play on attributions of gender and racial bias - kopie","r",NA,100,"=",-0.106,"=",0.288,0.288988045849559,"r(100) = -.106, p = .288",FALSE,FALSE,FALSE,FALSE,0.94
+"26_Hammer_Playing prejudice The impact of game-play on attributions of gender and racial bias - kopie","F",1,119,"=",0.406,"=",0.525,0.525230725879079,"F(1,119) = .406, p = .525",FALSE,FALSE,FALSE,FALSE,0.94
+"26_Hammer_Playing prejudice The impact of game-play on attributions of gender and racial bias - kopie","F",3,74,"=",0.026,"=",0.994,0.994288145910528,"F(3,74) = .026, p = .994",FALSE,FALSE,FALSE,FALSE,0.94
+"26_Hammer_Playing prejudice The impact of game-play on attributions of gender and racial bias - kopie","F",3,74,"=",1.525,"=",0.217,0.215087957849458,"F(3,74) = 1.525, p = .217",TRUE,FALSE,FALSE,FALSE,0.94
+"26_Hammer_Playing prejudice The impact of game-play on attributions of gender and racial bias - kopie","F",1,130,"=",0.084,"=",0.804,0.772409941401499,"F(1,130) = .084, p = .804",TRUE,FALSE,FALSE,FALSE,0.94
+"26_Hammer_Playing prejudice The impact of game-play on attributions of gender and racial bias - kopie","F",1,130,"=",1.716,"=",0.193,0.192518819461266,"F(1,130) = 1.716, p = .193",FALSE,FALSE,FALSE,FALSE,0.94
+"26_Hammer_Playing prejudice The impact of game-play on attributions of gender and racial bias - kopie","F",1,130,"=",0.023,"=",0.88,0.879692172832446,"F(1,130) = .023, p
+= .880",FALSE,FALSE,FALSE,FALSE,0.94
+"26_Hammer_Playing prejudice The impact of game-play on attributions of gender and racial bias - kopie","F",1,130,"=",4.754,"=",0.031,0.0310306203985542,"F(1,130) = 4.754, p = .031",FALSE,FALSE,FALSE,FALSE,0.94
+"26_Hammer_Playing prejudice The impact of game-play on attributions of gender and racial bias - kopie","F",1,189,"=",19.724,"<",0.001,1.52016566153098e-05,"F(1,189) = 19.724, p < .001",FALSE,FALSE,FALSE,FALSE,0.94
+"26_Hammer_Playing prejudice The impact of game-play on attributions of gender and racial bias - kopie","F",1,189,"=",5.52,"=",0.02,0.0198324135006645,"F(1,189) = 5.520, p = .020",FALSE,FALSE,FALSE,FALSE,0.94
+"26_Hammer_Playing prejudice The impact of game-play on attributions of gender and racial bias - kopie","F",1,189,"=",5.718,"=",0.018,0.0177732327511691,"F(1,189)
+= 5.718, p = .018",FALSE,FALSE,FALSE,FALSE,0.94
+"26_Hammer_Playing prejudice The impact of game-play on attributions of gender and racial bias - kopie","F",1,189,"=",4.473,"=",0.036,0.0357449113003258,"F(1,189) = 4.473, p = .036",FALSE,FALSE,FALSE,FALSE,0.94
+"26_Hammer_Playing prejudice The impact of game-play on attributions of gender and racial bias - kopie","F",3,80,"=",2.279,"=",0.086,0.0857631512329664,"F(3,80) = 2.279, p=.086",FALSE,FALSE,FALSE,FALSE,0.94
+"26_Hammer_Playing prejudice The impact of game-play on attributions of gender and racial bias - kopie","F",1,80,"=",0.093,"=",0.761,0.761189354625568,"F(1,80) = .093, p = .761",FALSE,FALSE,FALSE,FALSE,0.94
+"26_Hammer_Playing prejudice The impact of game-play on attributions of gender and racial bias - kopie","t",NA,98,"=",-1.551,"=",0.124,0.124125212718046,"t(98) = -1.551, p = .124",FALSE,FALSE,FALSE,FALSE,0.94
+"26_Hammer_Playing prejudice The impact of game-play on attributions of gender and racial bias - kopie","F",3,80,"=",0.291,"=",0.832,0.831778001945006,"F(3,80) = .291, p = .832",FALSE,FALSE,FALSE,FALSE,0.94
+"26_Hammer_Playing prejudice The impact of game-play on attributions of gender and racial bias - kopie","F",1,80,"=",0.546,"=",0.462,0.462119202131715,"F(1,80) = .546, p = .462",FALSE,FALSE,FALSE,FALSE,0.94
+"26_Hammer_Playing prejudice The impact of game-play on attributions of gender and racial bias - kopie","t",NA,98,"=",0.065,"=",0.949,0.94830640941385,"t(98) = .065, p = .949",FALSE,FALSE,FALSE,FALSE,0.94
+"26_Hammer_Playing prejudice The impact of game-play on attributions of gender and racial bias - kopie","r",NA,55,"=",0.162,"=",0.227,0.228609516109026,"r(55) = .162,
+p = .227",FALSE,FALSE,FALSE,FALSE,0.94
+"26_Hammer_Playing prejudice The impact of game-play on attributions of gender and racial bias - kopie","r",NA,88,"=",-0.083,"=",0.439,0.436720128153253,"r(88) = -.083, p = .439",FALSE,FALSE,FALSE,FALSE,0.94
+"26_Hammer_Playing prejudice The impact of game-play on attributions of gender and racial bias - kopie","r",NA,88,"=",-0.131,"=",0.217,0.218429627875723,"r(88) = -.131, p = .217",FALSE,FALSE,FALSE,FALSE,0.94
+"26_Hammer_Playing prejudice The impact of game-play on attributions of gender and racial bias - kopie","r",NA,88,"=",-0.106,"=",0.322,0.320051375537993,"r(88) = -.106, p
+= .322",FALSE,FALSE,FALSE,FALSE,0.94
+"26_Hammer_Playing prejudice The impact of game-play on attributions of gender and racial bias - kopie","F",1,98,"=",1.744,"=",0.19,0.189708555890178,"F(1, 98) = 1.744, p = .190",FALSE,FALSE,FALSE,FALSE,0.94
+"26_Hammer_Playing prejudice The impact of game-play on attributions of gender and racial bias - kopie","r",NA,55,"=",0.057,"=",0.671,0.673646110115758,"r(55) = .057,
+p = .671",FALSE,FALSE,FALSE,FALSE,0.94
+"26_Hammer_Playing prejudice The impact of game-play on attributions of gender and racial bias - kopie","r",NA,88,"=",0.159,"=",0.134,0.13442935834945,"r(88) = .159, p = .134",FALSE,FALSE,FALSE,FALSE,0.94
+"26_Hammer_Playing prejudice The impact of game-play on attributions of gender and racial bias - kopie","r",NA,88,"=",0.077,"=",0.473,0.47069603580064,"r(88) = .077, p = .473",FALSE,FALSE,FALSE,FALSE,0.94
+"26_Hammer_Playing prejudice The impact of game-play on attributions of gender and racial bias - kopie","r",NA,88,"=",0.079,"=",0.459,0.459214211208759,"r(88)
+= .079, p = .459",FALSE,FALSE,FALSE,FALSE,0.94
+"26_Hammer_Playing prejudice The impact of game-play on attributions of gender and racial bias - kopie","F",1,96,"=",0.239,"=",0.626,0.626044319205805,"F(1,96) = .239, p =.626",FALSE,FALSE,FALSE,FALSE,0.94
+"26_Hammer_Playing prejudice The impact of game-play on attributions of gender and racial bias - kopie","F",2,98,"=",0.581,"=",0.561,0.561253564977724,"F(2,98) = .581,
+p = .561",FALSE,FALSE,FALSE,FALSE,0.94
+"26_Hammer_Playing prejudice The impact of game-play on attributions of gender and racial bias - kopie","F",2,169,"=",0.217,"=",0.805,0.805153897372142,"F(2, 169) = .217, p = .805",FALSE,FALSE,FALSE,FALSE,0.94
+"26_Hammer_Playing prejudice The impact of game-play on attributions of gender and racial bias - kopie","F",2,169,"=",0.171,"=",0.843,0.842967217694526,"F(2,169) = .171, p = .843",FALSE,FALSE,FALSE,FALSE,0.94
+"26_Hammer_Playing prejudice The impact of game-play on attributions of gender and racial bias - kopie","F",2,169,"=",4.259,"=",0.016,0.0156835384669136,"F(2,169) = 4.259, p = .016",FALSE,FALSE,FALSE,FALSE,0.94
+"26_Hammer_Playing prejudice The impact of game-play on attributions of gender and racial bias - kopie","F",1,169,"=",8.383,"=",0.004,0.00428800517298861,"F(1,169) = 8.383, p = .004",FALSE,FALSE,FALSE,FALSE,0.94
+"26_Hammer_Playing prejudice The impact of game-play on attributions of gender and racial bias - kopie","F",3,54,"=",1.542,"=",0.214,0.214171973348528,"F(3,54) = 1.542, p = .214",FALSE,FALSE,FALSE,FALSE,0.94
+"26_Hammer_Playing prejudice The impact of game-play on attributions of gender and racial bias - kopie","F",1,54,"=",0.009,"=",0.925,0.924770575156987,"F(1,54) = .009, p = .925",FALSE,FALSE,FALSE,FALSE,0.94
+"26_Hammer_Playing prejudice The impact of game-play on attributions of gender and racial bias - kopie","F",2,54,"=",3.855,"=",0.049,0.0272290043952276,"F(2,54) = 3.855, p = .049",TRUE,FALSE,FALSE,FALSE,0.94
+"26_Hammer_Playing prejudice The impact of game-play on attributions of gender and racial bias - kopie","t",NA,53,"=",-1.901,"=",0.063,0.0627455715702306,"t(53) = -1.901, p = .063",FALSE,FALSE,FALSE,FALSE,0.94
+"26_Hammer_Playing prejudice The impact of game-play on attributions of gender and racial bias - kopie","t",NA,6,"=",0.918,"=",0.394,0.394023539519236,"t(6) = .918, p = .394",FALSE,FALSE,FALSE,FALSE,0.94
+"26_Hammer_Playing prejudice The impact of game-play on attributions of gender and racial bias - kopie","t",NA,11,"=",0.761,"=",0.463,0.462659083541207,"t(11) = .761, p = .463",FALSE,FALSE,FALSE,FALSE,0.94
+"26_Hammer_Playing prejudice The impact of game-play on attributions of gender and racial bias - kopie","F",3,54,"=",0.139,"=",0.936,0.936245648429358,"F(3,54) = .139, p = .936",FALSE,FALSE,FALSE,FALSE,0.94
+"26_Hammer_Playing prejudice The impact of game-play on attributions of gender and racial bias - kopie","F",1,54,"=",0.187,"=",0.667,0.667147397283004,"F(1,54) = .187, p = .667",FALSE,FALSE,FALSE,FALSE,0.94
+"26_Hammer_Playing prejudice The impact of game-play on attributions of gender and racial bias - kopie","F",2,54,"=",3.48,"=",0.038,0.0378806689925838,"F(2,54)
+= 3.480, p = .038",FALSE,FALSE,FALSE,FALSE,0.94
+"26_Hammer_Playing prejudice The impact of game-play on attributions of gender and racial bias - kopie","t",NA,31,"=",-2.37,"=",0.024,0.0241925124127228,"t(31) = -2.370, p = .024",FALSE,FALSE,FALSE,FALSE,0.94
+"26_Hammer_Playing prejudice The impact of game-play on attributions of gender and racial bias - kopie","F",3,86,"=",2.475,"=",0.067,0.066888112314252,"F(3,86) = 2.475, p = .067",FALSE,FALSE,FALSE,FALSE,0.94
+"26_Hammer_Playing prejudice The impact of game-play on attributions of gender and racial bias - kopie","F",3,86,"=",1.158,"=",0.33,0.330579527060583,"F(3,86) = 1.158, p = .330",FALSE,FALSE,FALSE,FALSE,0.94
+"26_Hammer_Playing prejudice The impact of game-play on attributions of gender and racial bias - kopie","F",3,114,"=",0.714,"=",0.546,0.545589644205721,"F(3,114) = .714, p = .546",FALSE,FALSE,FALSE,FALSE,0.94
+"26_Hammer_Playing prejudice The impact of game-play on attributions of gender and racial bias - kopie","F",3,114,"=",0.735,"=",0.533,0.5332347476865,"F(3,114) = .735, p = .533",FALSE,FALSE,FALSE,FALSE,0.94
+"26_Hammer_Playing prejudice The impact of game-play on attributions of gender and racial bias - kopie","F",2,86,"=",3.821,"=",0.026,0.0257154501386326,"F(2,86) = 3.821, p = .026",FALSE,FALSE,FALSE,FALSE,0.94
+"26_Hammer_Playing prejudice The impact of game-play on attributions of gender and racial bias - kopie","F",3,80,"=",3.868,"=",0.012,0.0122650968031971,"F(3,80) = 3.868, p = .012",FALSE,FALSE,FALSE,FALSE,0.94
+"26_Hammer_Playing prejudice The impact of game-play on attributions of gender and racial bias - kopie","F",1,80,"=",2.334,"=",0.131,0.130520592870639,"F(1,80) = 2.334, p
+= .131",FALSE,FALSE,FALSE,FALSE,0.94
+"26_Hammer_Playing prejudice The impact of game-play on attributions of gender and racial bias - kopie","t",NA,25,"=",2.461,"=",0.021,0.0211071754541301,"t(25) = 2.461, p = .021",FALSE,FALSE,FALSE,FALSE,0.94
+"26_Hammer_Playing prejudice The impact of game-play on attributions of gender and racial bias - kopie","t",NA,30,"=",-2.009,"=",0.054,0.0536100651827843,"t(30) = -2.009, p = .054",FALSE,FALSE,FALSE,FALSE,0.94
+"26_Hammer_Playing prejudice The impact of game-play on attributions of gender and racial bias - kopie","t",NA,23,"=",1.03,"=",0.314,0.31372044665658,"t(23) = 1.030, p = .314",FALSE,FALSE,FALSE,FALSE,0.94
+"26_Hammer_Playing prejudice The impact of game-play on attributions of gender and racial bias - kopie","t",NA,19,"=",-1.455,"=",0.163,0.161992390747024,"t(19) = -1.455, p = .163",TRUE,FALSE,FALSE,FALSE,0.94
+"26_Hammer_Playing prejudice The impact of game-play on attributions of gender and racial bias - kopie","F",3,80,"=",2.281,"=",0.086,0.0855532623123684,"F(3,80) = 2.281, p = .086",FALSE,FALSE,FALSE,FALSE,0.94
+"26_Hammer_Playing prejudice The impact of game-play on attributions of gender and racial bias - kopie","F",1,80,"=",0.314,"=",0.577,0.576801848269001,"F(1,80)
+= .314, p = .577",FALSE,FALSE,FALSE,FALSE,0.94
+"26_Hammer_Playing prejudice The impact of game-play on attributions of gender and racial bias - kopie","t",NA,98,"=",-0.142,"=",0.887,0.887371523241614,"t(98) = -.142, p = .887",FALSE,FALSE,FALSE,FALSE,0.94
+"26_Hammer_Playing prejudice The impact of game-play on attributions of gender and racial bias - kopie","F",2,80,"=",3.676,"=",0.03,0.0296951388541142,"F(2,80) = 3.676, p = .030",FALSE,FALSE,FALSE,FALSE,0.94
+"26_Hammer_Playing prejudice The impact of game-play on attributions of gender and racial bias - kopie","t",NA,77,"=",0.94,"=",0.35,0.350157101384977,"t(77) = .940, p
+= .350",FALSE,FALSE,FALSE,FALSE,0.94
+"26_Hammer_Playing prejudice The impact of game-play on attributions of gender and racial bias - kopie","t",NA,7,"=",-0.759,"=",0.472,0.472631178001473,"t(7) = -.759, p = .472",FALSE,FALSE,FALSE,FALSE,0.94
+"26_Hammer_Playing prejudice The impact of game-play on attributions of gender and racial bias - kopie","t",NA,12,"=",-2.547,"=",0.026,0.0256065946755814,"t(12) = -2.547, p = .026",FALSE,FALSE,FALSE,FALSE,0.94
+"26_Hammer_Playing prejudice The impact of game-play on attributions of gender and racial bias - kopie","r",NA,55,"=",-0.384,"=",0.003,0.00318937864266877,"r(55) = -.384, p = .003",FALSE,FALSE,FALSE,FALSE,0.94
+"26_Hammer_Playing prejudice The impact of game-play on attributions of gender and racial bias - kopie","r",NA,88,"=",0.07,"=",0.509,0.512081258725932,"r(88) = .070, p
+= .509",FALSE,FALSE,FALSE,FALSE,0.94
+"26_Hammer_Playing prejudice The impact of game-play on attributions of gender and racial bias - kopie","r",NA,88,"=",0.007,"=",0.948,0.947791557823863,"r(88) = .007, p = .948",FALSE,FALSE,FALSE,FALSE,0.94
+"26_Hammer_Playing prejudice The impact of game-play on attributions of gender and racial bias - kopie","r",NA,88,"=",-0.109,"=",0.308,0.306468150381677,"r(88) = -.109, p = .308",FALSE,FALSE,FALSE,FALSE,0.94
+"26_Hammer_Playing prejudice The impact of game-play on attributions of gender and racial bias - kopie","F",1,96,"=",0.731,"=",0.5,0.394687974300291,"F(1,96) = .731, p = .500",TRUE,FALSE,FALSE,FALSE,0.94
+"26_Hammer_Playing prejudice The impact of game-play on attributions of gender and racial bias - kopie","r",NA,55,"=",0.089,"=",0.511,0.510308642046567,"r(55) = .089, p = .511",FALSE,FALSE,FALSE,FALSE,0.94
+"26_Hammer_Playing prejudice The impact of game-play on attributions of gender and racial bias - kopie","r",NA,88,"=",-0.118,"=",0.268,0.268002972807774,"r(88) = -.118, p = .268",FALSE,FALSE,FALSE,FALSE,0.94
+"26_Hammer_Playing prejudice The impact of game-play on attributions of gender and racial bias - kopie","r",NA,88,"=",-0.092,"=",0.387,0.388456785209286,"r(88) = -.092, p = .387",FALSE,FALSE,FALSE,FALSE,0.94
+"26_Hammer_Playing prejudice The impact of game-play on attributions of gender and racial bias - kopie","r",NA,88,"=",-0.002,"=",0.988,0.985073680633923,"r(88) = -.002, p = .988",FALSE,FALSE,FALSE,FALSE,0.94
+"26_Hammer_Playing prejudice The impact of game-play on attributions of gender and racial bias - kopie","F",1,98,"=",0.001,"=",0.973,0.974837193915352,"F(1,98) = .001, p = .973",FALSE,FALSE,FALSE,FALSE,0.94
+"26_Hammer_Playing prejudice The impact of game-play on attributions of gender and racial bias - kopie","F",6,54,"=",2.644,"=",0.004,0.0254102990074558,"F(6,54) = 2.644, p
+= .004",TRUE,FALSE,FALSE,FALSE,0.94
+"26_Hammer_Playing prejudice The impact of game-play on attributions of gender and racial bias - kopie","F",1,54,"=",0.257,"=",0.614,0.614252722703473,"F(1,54) = .257, p = .614",FALSE,FALSE,FALSE,FALSE,0.94
+"26_Hammer_Playing prejudice The impact of game-play on attributions of gender and racial bias - kopie","F",1,54,"=",10.277,"=",0.002,0.00226378639970086,"F(1,54) = 10.277, p = .002",FALSE,FALSE,FALSE,FALSE,0.94
+"26_Hammer_Playing prejudice The impact of game-play on attributions of gender and racial bias - kopie","F",1,49,"=",2.181,"=",0.102,0.146122167309148,"F(1,49) = 2.181, p = .102",TRUE,FALSE,FALSE,FALSE,0.94
+"26_Hammer_Playing prejudice The impact of game-play on attributions of gender and racial bias - kopie","t",NA,77,"=",0.441,"=",0.66,0.660448763285686,"t(77)
+= .441, p = .660",FALSE,FALSE,FALSE,FALSE,0.94
+"26_Hammer_Playing prejudice The impact of game-play on attributions of gender and racial bias - kopie","F",1,14,"=",5.887,"=",0.003,0.0293499434986751,"F(1,14) = 5.887, p = .003",TRUE,FALSE,FALSE,FALSE,0.94
+"26_Hammer_Playing prejudice The impact of game-play on attributions of gender and racial bias - kopie","t",NA,4,"=",0.001,"=",1,0.99925000015625,"t(4) = .001, p = 1.000",FALSE,FALSE,FALSE,FALSE,0.94
+"26_Hammer_Playing prejudice The impact of game-play on attributions of gender and racial bias - kopie","t",NA,5,"=",-1,"=",0.363,0.363217467649123,"t(5) = -1.000, p = .363",FALSE,FALSE,FALSE,FALSE,0.94
+"26_Hammer_Playing prejudice The impact of game-play on attributions of gender and racial bias - kopie","t",NA,2,"=",2.646,"=",0.118,0.118064476929116,"t(2) = 2.646, p = .118",FALSE,FALSE,FALSE,FALSE,0.94
+"26_Hammer_Playing prejudice The impact of game-play on attributions of gender and racial bias - kopie","t",NA,4,"=",0.374,"=",0.372,0.727384714583961,"t(4) = .374, p = .372",TRUE,FALSE,FALSE,FALSE,0.94
+"26_Hammer_Playing prejudice The impact of game-play on attributions of gender and racial bias - kopie","F",6,54,"=",2.567,"=",0.029,0.0292397924258581,"F(6,54) = 2.567, p = .029",FALSE,FALSE,FALSE,FALSE,0.94
+"26_Hammer_Playing prejudice The impact of game-play on attributions of gender and racial bias - kopie","F",1,54,"=",0.289,"=",0.593,0.593070701844212,"F(1,54) = .289, p = .593",FALSE,FALSE,FALSE,FALSE,0.94
+"26_Hammer_Playing prejudice The impact of game-play on attributions of gender and racial bias - kopie","F",1,54,"=",9.572,"=",0.003,0.00312655206869345,"F(1,54) = 9.572, p = .003",FALSE,FALSE,FALSE,FALSE,0.94
+"26_Hammer_Playing prejudice The impact of game-play on attributions of gender and racial bias - kopie","F",1,49,"=",0.42,"=",0.739,0.519962448314319,"F(1,49) = .420, p = .739",TRUE,FALSE,FALSE,FALSE,0.94
+"26_Hammer_Playing prejudice The impact of game-play on attributions of gender and racial bias - kopie","t",NA,77,"=",0.94,"=",0.35,0.350157101384977,"t(77) = .940, p = .350",FALSE,FALSE,FALSE,FALSE,0.94
+"26_Hammer_Playing prejudice The impact of game-play on attributions of gender and racial bias - kopie","F",1,14,"=",8.164,"=",0.002,0.0126669197175155,"F(1,14) = 8.164, p = .002",TRUE,FALSE,FALSE,FALSE,0.94
+"26_Hammer_Playing prejudice The impact of game-play on attributions of gender and racial bias - kopie","t",NA,4,"=",-4,"=",0.016,0.0161300899000925,"t(4) = -4.000, p = .016",FALSE,FALSE,FALSE,FALSE,0.94
+"26_Hammer_Playing prejudice The impact of game-play on attributions of gender and racial bias - kopie","t",NA,5,"=",0.104,"=",0.921,0.921212168640063,"t(5) = .104, p
+= .921",FALSE,FALSE,FALSE,FALSE,0.94
+"26_Hammer_Playing prejudice The impact of game-play on attributions of gender and racial bias - kopie","t",NA,2,"=",1.732,"=",0.225,0.22541241973269,"t(2) = 1.732, p = .225",FALSE,FALSE,FALSE,FALSE,0.94
+"26_Hammer_Playing prejudice The impact of game-play on attributions of gender and racial bias - kopie","t",NA,4,"=",-2.449,"=",0.07,0.0705211769236244,"t(4) = -2.449, p = .070",FALSE,FALSE,FALSE,FALSE,0.94
+"27_kampf_2016","F",3,144,"=",44.57,"<",1e-04,1.95586218530681e-20,"F(3, 144) =44.57, p < .0001",FALSE,FALSE,FALSE,FALSE,0.67
+"27_kampf_2016","F",3,136,"=",44.57,"<",1e-04,3.9952072772064e-20,"F(3, 136) =44.57,
+p < .0001",FALSE,FALSE,FALSE,FALSE,0.67
+"27_kampf_2016","F",6,401,"=",23.46,"<",1e-04,8.98355883435713e-24,"F(6,401)=23.46, p<.0001",FALSE,FALSE,FALSE,FALSE,0.67
+"27_kampf_2016","F",6,401,"=",21.56,"<",1e-04,5.64282839859881e-22,"F(6, 401)=21.56,
+p<.0001",FALSE,FALSE,FALSE,FALSE,0.67
+"29_prescott_2017","t",NA,113,"=",-2.816,"=",0.006,0.00573945350314354,"t(113) = -2.816, p = .006",FALSE,FALSE,FALSE,TRUE,0.56
+"29_prescott_2017","t",NA,113,"=",2.355,"=",0.02,0.0202476724658634,"t(113) = 2.355, p = .020",FALSE,FALSE,FALSE,TRUE,0.56
+"29_prescott_2017","t",NA,111,"=",-2.487,"=",0.014,0.0143704109502985,"t(111) = -2.487, p = .014",FALSE,FALSE,FALSE,TRUE,0.56
+"29_prescott_2017","r",NA,126,"=",0.231,"=",0.009,0.00870543738360696,"r(126) = .231, p = .009",FALSE,FALSE,FALSE,TRUE,0.56
+"29_prescott_2017","r",NA,128,"=",0.464,"<",0.001,2.69594708286835e-08,"r(128) = .464, p < .001",FALSE,FALSE,FALSE,TRUE,0.56
+"29_prescott_2017","r",NA,127,"=",0.196,"=",0.027,0.0260073222680443,"r(127) = .196, p = .027",TRUE,FALSE,FALSE,TRUE,0.56
+"29_prescott_2017","r",NA,127,"=",0.041,"=",0.648,0.644560432965286,"r(127) = .041, p =
+.648",FALSE,FALSE,FALSE,TRUE,0.56
+"29_prescott_2017","t",NA,111,"=",2.829,"=",0.006,0.00554246897600068,"t(111) = 2.829, p = .006",FALSE,FALSE,FALSE,TRUE,0.56
+"29_prescott_2017","t",NA,110,"=",5.135,"<",1e-04,1.22894718539152e-06,"t(110) = 5.135, p < .0001",FALSE,FALSE,FALSE,TRUE,0.56
+"29_prescott_2017","t",NA,110,"=",-1.331,"=",0.186,0.185941207167859,"t(110) = -1.331, p = .186",FALSE,FALSE,FALSE,TRUE,0.56
+"29_prescott_2017","r",NA,131,"=",-0.343,"<",0.001,5.3078791902781e-05,"r(131) = -.343, p < .001",FALSE,FALSE,FALSE,TRUE,0.56
+"29_prescott_2017","t",NA,110,"=",-2.904,"=",0.004,0.00445359180431147,"t(110) = -2.904, p = .004",FALSE,FALSE,FALSE,TRUE,0.56
+"29_prescott_2017","r",NA,124,"=",0.195,"=",0.03,0.0286619521446078,"r(124) = .195, p = .030",TRUE,FALSE,FALSE,TRUE,0.56
+"29_prescott_2017","r",NA,122,"=",0.21,"=",0.02,0.0192350281116627,"r(122) = .210, p = .020",FALSE,FALSE,FALSE,TRUE,0.56
+"29_prescott_2017","r",NA,124,"=",0.162,"=",0.073,0.069937795715301,"r(124) = .162, p = .073",TRUE,FALSE,FALSE,TRUE,0.56
+"29_prescott_2017","r",NA,124,"=",0.109,"=",0.226,0.22438449887964,"r(124) = .109, p = .226",FALSE,FALSE,FALSE,TRUE,0.56
+"29_prescott_2017","t",NA,111,"=",2.141,"=",0.034,0.0344618791001784,"t(111) = 2.141, p = .034",FALSE,FALSE,FALSE,TRUE,0.56
+"29_prescott_2017","t",NA,111,"=",2.444,"=",0.016,0.01609988764606,"t(111)
+= 2.444, p = .016",FALSE,FALSE,FALSE,TRUE,0.56
+"29_prescott_2017","t",NA,102,"=",-2.651,"=",0.009,0.00930556283558606,"t(102) = -2.651, p = .009",FALSE,FALSE,FALSE,TRUE,0.56
+"29_prescott_2017","t",NA,39,"=",-2.139,"=",0.039,0.0387532606895598,"t(39) = -2.139, p = .039",FALSE,FALSE,FALSE,TRUE,0.56
+"29_prescott_2017","t",NA,39,"=",-0.27,"=",0.789,0.788583871498242,"t(39) = -0.270, p = .789",FALSE,FALSE,FALSE,TRUE,0.56
+"29_prescott_2017","r",NA,45,"=",0.276,"=",0.067,0.0603993894042783,"r(45) = .276, p = .067",TRUE,FALSE,FALSE,TRUE,0.56
+"29_prescott_2017","t",NA,38,"=",-2.315,"=",0.026,0.0261108382506119,"t(38) = -2.315, p =
+.026",FALSE,FALSE,FALSE,TRUE,0.56
+"29_prescott_2017","t",NA,33,"=",0.351,"=",0.728,0.727819369028344,"t(33) = .351, p =
+.728",FALSE,FALSE,FALSE,TRUE,0.56
+"29_prescott_2017","t",NA,41.86,"=",2.366,"=",0.023,0.0226875353611448,"t(41.86) = 2.366, p = .023",FALSE,FALSE,FALSE,TRUE,0.56
+"29_prescott_2017","t",NA,40.97,"=",2.541,"=",0.015,0.0149366863916622,"t(40.97) = 2.541, p = .015",FALSE,FALSE,FALSE,TRUE,0.56
+"29_prescott_2017","t",NA,92,"=",3.344,"=",0.001,0.00119595227024326,"t(92) = 3.344, p = .001",FALSE,FALSE,FALSE,TRUE,0.56
+"29_prescott_2017","t",NA,92,"=",-2.72,"=",0.008,0.00780514937793236,"t(92) = -2.720, p = .008",FALSE,FALSE,FALSE,TRUE,0.56
+"29_prescott_2017","r",NA,101,"=",0.095,"=",0.343,0.33981082882438,"r(101) = .095, p = .343",TRUE,FALSE,FALSE,TRUE,0.56
+"29_prescott_2017","t",NA,91,"=",-2.604,"=",0.011,0.0107604872570599,"t(91) = -2.604, p = .011",FALSE,FALSE,FALSE,TRUE,0.56
+"29_prescott_2017","t",NA,88.71,"=",12.066,"<",0.001,2.08156153588809e-20,"t(88.71) = 12.066, p < .001",FALSE,FALSE,FALSE,TRUE,0.56
+"29_prescott_2017","t",NA,114,"=",5.106,"<",0.001,1.33118178096343e-06,"t(114) = 5.106, p < .001",FALSE,FALSE,FALSE,TRUE,0.56
+"29_prescott_2017","t",NA,114,"=",1.719,"=",0.088,0.0883286381457823,"t(114) = 1.719, p = .088",FALSE,FALSE,FALSE,TRUE,0.56
+"29_prescott_2017","r",NA,30,"=",0.298,"=",0.061,0.0976095690519964,"r(30) = .298, p = .061",TRUE,FALSE,FALSE,TRUE,0.56
+"29_prescott_2017","r",NA,92,"=",-0.026,"=",0.402,0.80355526381694,"r(92)
+= -.026, p = .402",FALSE,FALSE,TRUE,TRUE,0.56
+"29_prescott_2017","Z",NA,NA,"=",1.47,"=",0.071,0.141561753983371,"Z = 1.47, p = .071",FALSE,FALSE,TRUE,TRUE,0.56
+"29_prescott_2017","t",NA,114,"=",2.294,"=",0.024,0.0236222213388973,"t(114) = 2.294, p = .024",FALSE,FALSE,FALSE,TRUE,0.56
+"29_prescott_2017","r",NA,30,"=",0.367,"=",0.023,0.0388105773978536,"r(30) = .367, p = .023",TRUE,FALSE,TRUE,TRUE,0.56
+"29_prescott_2017","r",NA,92,"=",0.026,"=",0.405,0.80355526381694,"r(92) = .026, p = .405",TRUE,FALSE,TRUE,TRUE,0.56
+"29_prescott_2017","Z",NA,NA,"=",1.63,"=",0.051,0.103101496980179,"Z = 1.63, p = .051",TRUE,FALSE,TRUE,TRUE,0.56
+"29_prescott_2017","t",NA,115,"=",-2.078,"=",0.04,0.0399347323630132,"t(115) = -2.078, p =
+.040",FALSE,FALSE,FALSE,TRUE,0.56
+"29_prescott_2017","t",NA,116,"=",-1.685,"=",0.095,0.0946771210654387,"t(116) = -1.685, p = .095",FALSE,FALSE,FALSE,TRUE,0.56
+"29_prescott_2017","r",NA,122,"=",0.07,"=",0.443,0.439794130131896,"r(122) = .070, p = .443",FALSE,FALSE,FALSE,TRUE,0.56
+"29_prescott_2017","r",NA,121,"=",0.047,"=",0.607,0.605701883485025,"r(121) = .047, p = .607",FALSE,FALSE,FALSE,TRUE,0.56
+"29_prescott_2017","t",NA,114,"=",-2.047,"=",0.043,0.0429572670984955,"t(114) = -2.047,
+p = .043",FALSE,FALSE,FALSE,TRUE,0.56
+"29_prescott_2017","t",NA,107.12,"=",15.375,"<",0.001,7.24890310622664e-29,"t(107.12) = 15.375, p < .001",FALSE,FALSE,FALSE,TRUE,0.56
+"29_prescott_2017","F",1.23,56.77,"=",5.229,"=",0.02,0.0197488979417049,"F(1.23, 56.77) = 5.229, p = .020",FALSE,FALSE,FALSE,TRUE,0.56
+"29_prescott_2017","F",1.23,56.77,"=",2.92,"=",0.085,0.0850496488880462,"F(1.23, 56.77) = 2.92, p = .085",FALSE,FALSE,FALSE,TRUE,0.56
+"29_prescott_2017","t",NA,45,"=",2.367,"=",0.011,0.0222947816119322,"t(45) = 2.367, p = .011",FALSE,FALSE,TRUE,TRUE,0.56
+"29_prescott_2017","t",NA,45,"=",1.41,"=",0.083,0.165414362597386,"t(45) = 1.410, p = .083",FALSE,FALSE,TRUE,TRUE,0.56
+"29_prescott_2017","F",1.54,71.04,"=",6.389,"=",0.006,0.00570228871637463,"F(1.54, 71.04) = 6.389, p = .006",FALSE,FALSE,FALSE,TRUE,0.56
+"29_prescott_2017","F",1.54,71.04,"=",4.73,"=",0.019,0.0187587525206903,"F(1.54, 71.04) = 4.730, p = .019",FALSE,FALSE,FALSE,TRUE,0.56
+"29_prescott_2017","F",1,46,"=",4.349,"=",0.043,0.0426067265341149,"F(1, 46) = 4.349, p = .043",FALSE,FALSE,FALSE,TRUE,0.56
+"29_prescott_2017","t",NA,45,"=",2.421,"=",0.01,0.0195740515927891,"t(45) = 2.421, p = .010",FALSE,FALSE,TRUE,TRUE,0.56
+"29_prescott_2017","t",NA,45,"=",1.52,"=",0.068,0.135506754592579,"t(45)
+= 1.520, p = .068",FALSE,FALSE,TRUE,TRUE,0.56
+"29_prescott_2017","t",NA,45,"=",1.451,"=",0.077,0.153715619068207,"t(45) = 1.451, p = .077",FALSE,FALSE,TRUE,TRUE,0.56
+"29_prescott_2017","F",2.34,83.28,"=",4.621,"=",0.009,0.00898861824780157,"F(2.34, 83.28) = 4.621, p = .009",FALSE,FALSE,FALSE,TRUE,0.56
+"29_prescott_2017","F",2.38,83.28,"=",4.226,"=",0.013,0.0129671558245159,"F(2.38, 83.28)
+= 4.226, p = .013",FALSE,FALSE,FALSE,TRUE,0.56
+"29_prescott_2017","F",1.43,50.01,"=",3.256,"=",0.062,0.0623381121635559,"F(1.43, 50.01) = 3.256, p =.062",FALSE,FALSE,FALSE,TRUE,0.56
+"29_prescott_2017","F",2.77,96.97,"=",9.461,"<",0.001,2.62233697307795e-05,"F(2.77, 96.97) = 9.461, p < .001",FALSE,FALSE,FALSE,TRUE,0.56
+"29_prescott_2017","t",NA,44,"=",-1.704,"=",0.095,0.0954346281735407,"t(44) = -1.704, p = .095",FALSE,FALSE,FALSE,TRUE,0.56
+"29_prescott_2017","t",NA,44,"=",-1.591,"=",0.119,0.118769685546459,"t(44) = -1.591, p = .119",FALSE,FALSE,FALSE,TRUE,0.56
+"29_prescott_2017","t",NA,45,"=",-2.78,"=",0.008,0.00790719987221567,"t(45) = -2.780, p =
+.008",FALSE,FALSE,FALSE,TRUE,0.56
+"29_prescott_2017","t",NA,22,"=",-3.701,"=",0.001,0.00124705567037391,"t(22) = -3.701, p = .001",FALSE,FALSE,FALSE,TRUE,0.56
+"29_prescott_2017","t",NA,20,"=",-0.319,"=",0.753,0.753034226608669,"t(20) = -.319, p = .753",FALSE,FALSE,FALSE,TRUE,0.56
+"29_prescott_2017","t",NA,45,"=",-1.36,"=",0.091,0.180604853884576,"t(45) = -1.360, p = .091",TRUE,FALSE,TRUE,TRUE,0.56
+"29_prescott_2017","t",NA,45,"=",1.771,"=",0.083,0.083333660328935,"t(45) = 1.771, p = .083",FALSE,FALSE,FALSE,TRUE,0.56
+"29_prescott_2017","t",NA,20,"=",2.266,"=",0.035,0.0347023658146181,"t(20) = 2.266, p = .035",FALSE,FALSE,FALSE,TRUE,0.56
+"29_prescott_2017","t",NA,22,"=",0.004,"=",0.997,0.996844520429744,"t(22) = .004, p = .997",FALSE,FALSE,FALSE,TRUE,0.56
+"29_prescott_2017","t",NA,44,"=",2.226,"=",0.031,0.0311838129076672,"t(44) = 2.226, p = .031",FALSE,FALSE,FALSE,TRUE,0.56
+"29_prescott_2017","t",NA,44,"=",1.52,"=",0.068,0.135665036494332,"t(44) = 1.520,
+p = .068",FALSE,FALSE,TRUE,TRUE,0.56
+"29_prescott_2017","t",NA,44,"=",-2.213,"=",0.032,0.0321309923543715,"t(44) = -2.213, p = .032",FALSE,FALSE,FALSE,TRUE,0.56
+"29_prescott_2017","r",NA,23,"=",0.533,"=",0.009,0.00608153608085594,"r(23) = .533, p = .009",TRUE,FALSE,FALSE,TRUE,0.56
+"29_prescott_2017","r",NA,25,"=",-0.035,"=",0.866,0.862405831504206,"r(25) = -.035, p = .866",TRUE,FALSE,FALSE,TRUE,0.56
+"29_prescott_2017","r",NA,101,"=",0.002,"=",0.987,0.984003421095465,"r(101) = .002, p = .987",FALSE,FALSE,FALSE,TRUE,0.56
+"29_prescott_2017","r",NA,101,"=",-0.567,"<",0.001,4.26827964775748e-10,"r(101) = -.567, p < .001",FALSE,FALSE,FALSE,TRUE,0.56
+"29_prescott_2017","r",NA,101,"=",-0.58,"<",0.001,1.36015591485848e-10,"r(101) = -.580, p < .001",FALSE,FALSE,FALSE,TRUE,0.56
+"29_prescott_2017","r",NA,117,"=",-138,"=",0.137,NA,"r(117) = -138, p = .137",NA,NA,NA,TRUE,0.56
+"29_prescott_2017","r",NA,118,"=",-0.479,"<",0.001,3.12519165188432e-08,"r(118) = -.479, p < .001",FALSE,FALSE,FALSE,TRUE,0.56
+"29_prescott_2017","r",NA,117,"=",-0.497,"<",0.001,8.95911942488409e-09,"r(117) = -.497, p < .001",FALSE,FALSE,FALSE,TRUE,0.56
+"30_andersonL2009_paper_from_dissertation","F",1,29,"=",119.21,"<",1e-04,8.66920627229858e-12,"F(1, 29) = 119.21, p < .0001",FALSE,FALSE,FALSE,FALSE,0.93
+"30_andersonL2009_paper_from_dissertation","F",1,29,"=",0.41,">",0.5,0.526996811429371,"F(1, 29) = 0.41, p > .50",FALSE,FALSE,FALSE,FALSE,0.93
+"30_andersonL2009_paper_from_dissertation","F",1,29,"=",0.05,">",0.8,0.824631021046868,"F(1, 29) = 0.05, p > .80",FALSE,FALSE,FALSE,FALSE,0.93
+"30_andersonL2009_paper_from_dissertation","F",1,29,"=",5.85,"<",0.03,0.0220822345539856,"F(1, 29) = 5.85, p < .03",FALSE,FALSE,FALSE,FALSE,0.93
+"30_andersonL2009_paper_from_dissertation","F",1,14,"=",1.76,">",0.2,0.20585852807121,"F(1, 14) = 1.76,
+p > .20",FALSE,FALSE,FALSE,FALSE,0.93
+"30_andersonL2009_paper_from_dissertation","F",1,14,"=",4.04,"<",0.07,0.0641105699996586,"F(1, 14) = 4.04, p < .07",FALSE,FALSE,FALSE,FALSE,0.93
+"30_andersonL2009_paper_from_dissertation","F",1,29,"=",1.1,">",0.3,0.302928638016784,"F(1, 29) = 1.10, p > .30",FALSE,FALSE,FALSE,FALSE,0.93
+"30_andersonL2009_paper_from_dissertation","F",1,358,"=",214.57,"<",0.001,2.13589173466157e-38,"F(1, 358) = 214.57,
+p < .001",FALSE,FALSE,FALSE,FALSE,0.93
+"30_andersonL2009_paper_from_dissertation","F",1,358,"=",5.13,"<",0.05,0.024112928909746,"F(1, 358) = 5.13, p < .05",FALSE,FALSE,FALSE,FALSE,0.93
+"30_andersonL2009_paper_from_dissertation","F",1,358,"=",6.94,"<",0.01,0.00879488914330455,"F(1, 358) = 6.94, p < .01",FALSE,FALSE,FALSE,FALSE,0.93
+"30_andersonL2009_paper_from_dissertation","F",1,358,"=",17.51,"<",0.001,3.5998626787322e-05,"F(1, 358) = 17.51, p < .001",FALSE,FALSE,FALSE,FALSE,0.93
+"30_andersonL2009_paper_from_dissertation","F",1,358,"=",6.39,"<",0.05,0.0119059911754144,"F(1, 358) = 6.39, p < .05",FALSE,FALSE,FALSE,FALSE,0.93
+"30_andersonL2009_paper_from_dissertation","F",2,624,"=",2.51,">",0.05,0.082088486464581,"F(2, 624) = 2.51, p > .05",FALSE,FALSE,FALSE,FALSE,0.93
+"30_andersonL2009_paper_from_dissertation","F",2,618,"=",1.01,">",0.05,0.364819364078252,"F(2, 618) = 1.01,
+p > .05",FALSE,FALSE,FALSE,FALSE,0.93
+"30_andersonL2009_paper_from_dissertation","F",1,107,"=",6.78,"<",0.05,0.0105275834035251,"F(1, 107) = 6.78, p < .05",FALSE,FALSE,FALSE,FALSE,0.93
+"30_andersonL2009_paper_from_dissertation","F",1,107,"=",7.12,"<",0.05,0.00880894085146092,"F(1, 107) = 7.12, p < .05",FALSE,FALSE,FALSE,FALSE,0.93
+"30_andersonL2009_paper_from_dissertation","F",1,107,"=",0.17,">",0.05,0.680936709819398,"F(1, 107) = 0.17, p > .05",FALSE,FALSE,FALSE,FALSE,0.93
+"30_andersonL2009_paper_from_dissertation","F",1,100,"=",4.51,"<",0.05,0.036164359709239,"F(1, 100) = 4.51, p < .05",FALSE,FALSE,FALSE,FALSE,0.93
+"30_andersonL2009_paper_from_dissertation","F",1,51,"=",3.81,"<",0.06,0.0564486453031135,"F(1, 51) = 3.81, p < .06",FALSE,FALSE,FALSE,FALSE,0.93
+"30_andersonL2009_paper_from_dissertation","F",1,144,"=",10.84,"<",0.01,0.00124970615812575,"F(1, 144) = 10.84, p < .01",FALSE,FALSE,FALSE,FALSE,0.93
+"30_andersonL2009_paper_from_dissertation","F",1,143,"=",81.46,"<",0.001,1.09292789559007e-15,"F(1, 143) = 81.46, p < .001",FALSE,FALSE,FALSE,FALSE,0.93
+"30_andersonL2009_paper_from_dissertation","F",1,143,"=",6.24,"<",0.02,0.0136222690119249,"F(1, 143) = 6.24, p < .02",FALSE,FALSE,FALSE,FALSE,0.93
+"30_andersonL2009_paper_from_dissertation","F",1,143,"=",9.09,"<",0.01,0.00304187994087161,"F(1, 143) = 9.09, p < .01",FALSE,FALSE,FALSE,FALSE,0.93
+"30_andersonL2009_paper_from_dissertation","F",1,144,"=",3.68,"<",0.06,0.057047878195496,"F(1, 144) = 3.68, p < .06",FALSE,FALSE,FALSE,FALSE,0.93
+"30_andersonL2009_paper_from_dissertation","F",1,143,"=",30.27,"<",0.001,1.68659971584206e-07,"F(1, 143) = 30.27, p < .001",FALSE,FALSE,FALSE,FALSE,0.93
+"30_andersonL2009_paper_from_dissertation","F",1,143,"=",1.27,">",0.25,0.261654173105626,"F(1, 143) = 1.27, p > .25",FALSE,FALSE,FALSE,FALSE,0.93
+"30_andersonL2009_paper_from_dissertation","F",1,140,"=",1.19,">",0.05,0.277203463544559,"F(1, 140) = 1.19, p > .05",FALSE,FALSE,FALSE,FALSE,0.93
+"30_andersonL2009_paper_from_dissertation","F",1,143,"=",11.48,"<",0.01,0.000909072650313923,"F(1, 143) = 11.48, p < .01",FALSE,FALSE,FALSE,FALSE,0.93
+"30_andersonL2009_paper_from_dissertation","F",1,143,"=",7.5,"<",0.01,0.00695507936454963,"F(1, 143) = 7.50, p < .01",FALSE,FALSE,FALSE,FALSE,0.93
+"30_andersonL2009_paper_from_dissertation","F",1,143,"=",3.91,"<",0.05,0.0499223141341872,"F(1, 143) = 3.91, p < .05",FALSE,FALSE,FALSE,FALSE,0.93
+"30_andersonL2009_paper_from_dissertation","F",1,144,"=",1.69,">",0.05,0.195677987555796,"F(1, 144) = 1.69,
+p > .05",FALSE,FALSE,FALSE,FALSE,0.93
+"30_andersonL2009_paper_from_dissertation","F",1,144,"=",4.49,"<",0.05,0.0358098791338635,"F(1, 144) = 4.49, p < .05",FALSE,FALSE,FALSE,FALSE,0.93
+"30_andersonL2009_paper_from_dissertation","F",1,144,"=",2.98,"<",0.09,0.0864440199934001,"F(1, 144) = 2.98, p < .09",FALSE,FALSE,FALSE,FALSE,0.93
+"30_andersonL2009_paper_from_dissertation","F",1,144,"=",6.65,"<",0.05,0.0109182767174732,"F(1, 144) = 6.65, p < .05",FALSE,FALSE,FALSE,FALSE,0.93
+"30_andersonL2009_paper_from_dissertation","F",1,144,"=",6.06,"<",0.05,0.0150086565773708,"F(1, 144) = 6.06, p < .05",FALSE,FALSE,FALSE,FALSE,0.93
+"30_andersonL2009_paper_from_dissertation","F",1,140,"=",0.75,">",0.05,0.387957937839447,"F(1, 140) = 0.75, p > .05",FALSE,FALSE,FALSE,FALSE,0.93
+"30_andersonL2009_paper_from_dissertation","F",1,99,"=",6.27,"<",0.05,0.0139142938960944,"F(1, 99) = 6.27, p < .05",FALSE,FALSE,FALSE,FALSE,0.93
+"30_andersonL2009_paper_from_dissertation","F",1,99,"=",4.38,"<",0.05,0.0389198508057183,"F(1, 99) = 4.38, p < .05",FALSE,FALSE,FALSE,FALSE,0.93
+"30_andersonL2009_paper_from_dissertation","F",1,99,"=",2.31,">",0.05,0.131731438034533,"F(1, 99) = 2.31,
+p > .05",FALSE,FALSE,FALSE,FALSE,0.93
+"30_andersonL2009_paper_from_dissertation","F",1,98,"=",4.71,"<",0.05,0.0324039476497586,"F(1, 98) = 4.71, p < .05",FALSE,FALSE,FALSE,FALSE,0.93
+"30_andersonL2009_paper_from_dissertation","F",1,98,"=",12.7,"<",0.01,0.000566860459101415,"F(1, 98) = 12.70, p < .01",FALSE,FALSE,FALSE,FALSE,0.93
+"30_andersonL2009_paper_from_dissertation","F",1,97,"=",8.91,"<",0.01,0.00358928055939446,"F(1, 97) = 8.91, p < .01",FALSE,FALSE,FALSE,FALSE,0.93
+"30_andersonL2009_paper_from_dissertation","F",1,97,"=",5.03,"<",0.05,0.0271882437269497,"F(1, 97) = 5.03, p < .05",FALSE,FALSE,FALSE,FALSE,0.93
+"30_andersonL2009_paper_from_dissertation","F",1,97,"=",1.63,">",0.05,0.204751055719738,"F(1, 97) = 1.63, p > .05",FALSE,FALSE,FALSE,FALSE,0.93
+"30_andersonL2009_paper_from_dissertation","F",1,97,"=",7.07,"<",0.01,0.00917038194545375,"F(1, 97) = 7.07, p < .01",FALSE,FALSE,FALSE,FALSE,0.93
+"30_andersonL2009_paper_from_dissertation","F",1,97,"=",6.13,"<",0.05,0.015023643903054,"F(1, 97) = 6.13, p < .05",FALSE,FALSE,FALSE,FALSE,0.93
+"30_andersonL2009_paper_from_dissertation","F",1,97,"=",5.7,"<",0.05,0.0189029702626597,"F(1, 97) = 5.70, p < .05",FALSE,FALSE,FALSE,FALSE,0.93
+"30_andersonL2009_paper_from_dissertation","F",1,98,"=",13.78,"<",0.05,0.000341380367908597,"F(1, 98) = 13.78, p < .05",FALSE,FALSE,FALSE,FALSE,0.93
+"30_andersonL2009_paper_from_dissertation","F",1,97,"=",8.16,"<",0.01,0.00523945922571599,"F(1, 97) = 8.16, p < .01",FALSE,FALSE,FALSE,FALSE,0.93
+"30_andersonL2009_paper_from_dissertation","F",1,98,"=",2.26,">",0.05,0.13596987083939,"F(1, 98) = 2.26, p > .05",FALSE,FALSE,FALSE,FALSE,0.93
+"30_andersonL2009_paper_from_dissertation","F",1,97,"=",6.28,"<",0.05,0.0138751659106224,"F(1, 97) = 6.28, p < .05",FALSE,FALSE,FALSE,FALSE,0.93
+"31_lavender_thesis_final_chybidataMeanaSD","t",NA,17,"=",3,"<",0.05,0.0080546968092095,"t(17) = 3.00, p < .05",FALSE,FALSE,FALSE,FALSE,0.62
+"31_lavender_thesis_final_chybidataMeanaSD","t",NA,18,"=",3,"<",0.05,0.00768541214031432,"t(18) = 3.00, p < .05",FALSE,FALSE,FALSE,FALSE,0.62
+"31_lavender_thesis_final_chybidataMeanaSD","t",NA,23,"=",2.5,"<",0.05,0.0199941223278871,"t(23) = 2.50, p <.05",FALSE,FALSE,FALSE,FALSE,0.62
+"31_lavender_thesis_final_chybidataMeanaSD","F",4,10,"=",3.77,"<",0.05,0.0403751764609831,"F(4,10) = 3.77, p < .05",FALSE,FALSE,FALSE,FALSE,0.62
+"31_lavender_thesis_final_chybidataMeanaSD","F",4,11,"=",3.33,"<",0.05,0.051080762704658,"F(4,11) = 3.33, p < .05",TRUE,TRUE,TRUE,FALSE,0.62
+"34_waddington 2013","F",1,126,"=",2.04,"=",0.03,0.155683747461234,"F(1,126)=2.04, p=.03",TRUE,TRUE,FALSE,FALSE,0.5
+"34_waddington 2013","F",1,137,"=",6.07,"=",0.02,0.0149885309498335,"F(1,137)=6.07, p=.02",FALSE,FALSE,FALSE,FALSE,0.5
+"34_waddington 2013","F",1,137,"=",4.58,"=",0.03,0.0341187856682307,"F(1,137)=4.58, p=.03",FALSE,FALSE,FALSE,FALSE,0.5
+"34_waddington 2013","F",2,127,"=",5.5,"=",0.005,0.0051193437736097,"F(2,127)=5.50, p=.005",FALSE,FALSE,FALSE,FALSE,0.5
+"34_waddington 2013","F",2,127,"=",3.06,"=",0.05,0.0503600511555873,"F(2, 127)=3.06, p =.05",FALSE,FALSE,FALSE,FALSE,0.5
+"36_saleem Effects of stereotypic video game portrayals on implicit and expl","t",NA,171,"=",23.58,"<",1e-04,1.26300292881763e-55,"t(171) = 23.58, p <
+.0001",FALSE,FALSE,FALSE,FALSE,0.68
+"36_saleem Effects of stereotypic video game portrayals on implicit and expl","F",2,165,"=",26.97,"<",0.001,7.33843604054991e-11,"F(2, 165) = 26.97, p < .001",FALSE,FALSE,FALSE,FALSE,0.68
+"36_saleem Effects of stereotypic video game portrayals on implicit and expl","F",2,163,"=",168.76,"<",0.001,1.95183334687397e-40,"F(2, 163) = 168.76, p < .001",FALSE,FALSE,FALSE,FALSE,0.68
+"36_saleem Effects of stereotypic video game portrayals on implicit and expl","F",1,164,"=",8.14,"<",0.001,0.0048881867060093,"F(1, 164) = 8.14, p < .001",TRUE,FALSE,FALSE,FALSE,0.68
+"36_saleem Effects of stereotypic video game portrayals on implicit and expl","F",1,165,"=",12.73,"<",0.001,0.000471296870731642,"F(1, 165) =
+12.73, p < .001",FALSE,FALSE,FALSE,FALSE,0.68
+"36_saleem Effects of stereotypic video game portrayals on implicit and expl","F",1,165,"=",12.02,"<",0.001,0.00067116523838696,"F(1, 165) = 12.02, p < .001",FALSE,FALSE,FALSE,FALSE,0.68
+"36_saleem Effects of stereotypic video game portrayals on implicit and expl","F",1,165,"=",8.6,"<",0.01,0.00383968423413968,"F(1, 165) = 8.60, p < .01",FALSE,FALSE,FALSE,FALSE,0.68
+"36_saleem Effects of stereotypic video game portrayals on implicit and expl","F",1,164,"=",6.74,"<",0.05,0.0102833341139629,"F(1, 164) = 6.74, p < .05",FALSE,FALSE,FALSE,FALSE,0.68
+"36_saleem Effects of stereotypic video game portrayals on implicit and expl","F",1,167,"=",7.68,"<",0.05,0.0062170961763044,"F(1, 167) = 7.68, p < .05",FALSE,FALSE,FALSE,FALSE,0.68
+"36_saleem Effects of stereotypic video game portrayals on implicit and expl","F",1,166,"=",6.58,"<",0.05,0.0111981899818161,"F(1, 166) = 6.58, p < .05",FALSE,FALSE,FALSE,FALSE,0.68
+"36_saleem Effects of stereotypic video game portrayals on implicit and expl","F",2,166,"=",5.09,"<",0.05,0.00715439704486477,"F(2, 166) = 5.09, p < .05",FALSE,FALSE,FALSE,FALSE,0.68
+"36_saleem Effects of stereotypic video game portrayals on implicit and expl","F",2,79,"=",10.22,"<",0.01,0.000112877150760773,"F(2, 79) =
+10.22, p < .01",FALSE,FALSE,FALSE,FALSE,0.68
+"36_saleem Effects of stereotypic video game portrayals on implicit and expl","F",2,89,"=",2.26,">",0.1,0.11030752183552,"F(2, 89) = 2.26, p > .10",FALSE,FALSE,FALSE,FALSE,0.68
+"36_saleem Effects of stereotypic video game portrayals on implicit and expl","F",2,170,"=",5.12,"<",0.01,0.00693119514352364,"F(2, 170) = 5.12, p < .01",FALSE,FALSE,FALSE,FALSE,0.68
+"36_saleem Effects of stereotypic video game portrayals on implicit and expl","F",1,170,"=",10.14,"<",0.001,0.00172594703610133,"F(1, 170) = 10.14, p < .001",TRUE,FALSE,FALSE,FALSE,0.68
+"36_saleem Effects of stereotypic video game portrayals on implicit and expl","F",1,170,"=",3.59,"=",0.059,0.0598259200242349,"F(1, 170)
+= 3.59, p = .059",TRUE,FALSE,FALSE,FALSE,0.68
+"36_saleem Effects of stereotypic video game portrayals on implicit and expl","F",1,170,"=",6.84,"<",0.01,0.00971539809149113,"F(1, 170) = 6.84, p < .01",FALSE,FALSE,FALSE,FALSE,0.68
+"36_saleem Effects of stereotypic video game portrayals on implicit and expl","F",2,157,"=",3.99,"<",0.05,0.020406368344138,"F(2, 157) = 3.99, p < .05",FALSE,FALSE,FALSE,FALSE,0.68
+"36_saleem Effects of stereotypic video game portrayals on implicit and expl","F",2,158,"=",4.58,"<",0.05,0.011653415573479,"F(2, 158) = 4.58, p < .05",FALSE,FALSE,FALSE,FALSE,0.68
+"36_saleem Effects of stereotypic video game portrayals on implicit and expl","F",2,161,"=",5.66,"<",0.01,0.00421172785719078,"F(2, 161) = 5.66, p < .01",FALSE,FALSE,FALSE,FALSE,0.68
+"36_saleem Effects of stereotypic video game portrayals on implicit and expl","F",1,161,"=",3.81,"=",0.053,0.0526824234905046,"F(1, 161) = 3.81, p =.053",FALSE,FALSE,FALSE,FALSE,0.68
+"36_saleem Effects of stereotypic video game portrayals on implicit and expl","F",2,161,"=",6.1,"<",0.01,0.00279497586609923,"F(2, 161) =
+6.10, p < .01",FALSE,FALSE,FALSE,FALSE,0.68
+"36_saleem Effects of stereotypic video game portrayals on implicit and expl","t",NA,53,"=",2.75,"<",0.01,0.00813406374373258,"t (53) = 2.75, p <.01",FALSE,FALSE,FALSE,FALSE,0.68
+"36_saleem Effects of stereotypic video game portrayals on implicit and expl","t",NA,54,"=",2.66,"<",0.05,0.0102651831946569,"t (54) = 2.66, p <.05",FALSE,FALSE,FALSE,FALSE,0.68
+"36_saleem Effects of stereotypic video game portrayals on implicit and expl","t",NA,53,"=",-1.55,">",0.1,0.127092824937326,"t(53) = -1.55, p > .10",FALSE,FALSE,FALSE,FALSE,0.68
+"36_saleem Effects of stereotypic video game portrayals on implicit and expl","F",2,163,"=",4.57,"<",0.05,0.0117198801524335,"F(2, 163) = 4.57, p < .05",FALSE,FALSE,FALSE,FALSE,0.68
+"36_saleem Effects of stereotypic video game portrayals on implicit and expl","F",1,163,"=",5.44,"<",0.05,0.0209031621231144,"F(1, 163) = 5.44, p < .05",FALSE,FALSE,FALSE,FALSE,0.68
+"36_saleem Effects of stereotypic video game portrayals on implicit and expl","F",2,163,"=",0.55,">",0.1,0.578016722494693,"F(2, 163) =
+0.55, p > .10",FALSE,FALSE,FALSE,FALSE,0.68
+"36_saleem Effects of stereotypic video game portrayals on implicit and expl","F",1,157,"=",0.11,">",0.1,0.740586453038689,"F(1, 157) = 0.11, p > .10",FALSE,FALSE,FALSE,FALSE,0.68
+"36_saleem Effects of stereotypic video game portrayals on implicit and expl","F",2,157,"=",4.24,"<",0.05,0.0160916287565277,"F(2, 157) = 4.24, p < .05",FALSE,FALSE,FALSE,FALSE,0.68
+"36_saleem Effects of stereotypic video game portrayals on implicit and expl","F",2,157,"=",3.49,"<",0.05,0.0328880762850627,"F(2, 157) = 3.49, p < .05",FALSE,FALSE,FALSE,FALSE,0.68
+"36_saleem Effects of stereotypic video game portrayals on implicit and expl","t",NA,52,"=",2.23,"<",0.05,0.0300895809847374,"t (52) = 2.23, p <.05",FALSE,FALSE,FALSE,FALSE,0.68
+"36_saleem Effects of stereotypic video game portrayals on implicit and expl","F",1,140,"=",8.35,"<",0.01,0.00447145994419393,"F(1, 140) = 8.35, p < .01",FALSE,FALSE,FALSE,FALSE,0.68
+"36_saleem Effects of stereotypic video game portrayals on implicit and expl","F",2,140,"=",3.17,"<",0.05,0.0450348736538479,"F(2, 140) = 3.17, p < .05",FALSE,FALSE,FALSE,FALSE,0.68
+"36_saleem Effects of stereotypic video game portrayals on implicit and expl","t",NA,44,"=",-3.08,"<",0.01,0.00356125471950791,"t (44) = -3.08, p <.01",FALSE,FALSE,FALSE,FALSE,0.68
+"36_saleem Effects of stereotypic video game portrayals on implicit and expl","F",2,140,"=",1.89,">",0.1,0.154906252712689,"F(2, 140) = 1.89, p > .10",FALSE,FALSE,FALSE,FALSE,0.68
+"36_saleem Effects of stereotypic video game portrayals on implicit and expl","F",1,164,"=",2.67,">",0.05,0.104174221341839,"F(1, 164) = 2.67, p > .05",FALSE,FALSE,FALSE,FALSE,0.68
+"36_saleem Effects of stereotypic video game portrayals on implicit and expl","F",2,164,"=",4.2,"<",0.01,0.0166394933254838,"F(2, 164) = 4.20, p < .01",TRUE,FALSE,FALSE,FALSE,0.68
+"36_saleem Effects of stereotypic video game portrayals on implicit and expl","F",2,164,"=",3.82,"<",0.05,0.0239044116663629,"F(2, 164) = 3.82, p < .05",FALSE,FALSE,FALSE,FALSE,0.68
+"36_saleem Effects of stereotypic video game portrayals on implicit and expl","t",NA,55,"=",3.04,"<",0.01,0.00361810382105646,"t (55) = 3.04, p <.01",FALSE,FALSE,FALSE,FALSE,0.68
+"36_saleem Effects of stereotypic video game portrayals on implicit and expl","F",2,155,"=",0.58,">",0.1,0.561108804258981,"F(2, 155) = 0.58, p > .10",FALSE,FALSE,FALSE,FALSE,0.68
+"36_saleem Effects of stereotypic video game portrayals on implicit and expl","F",1,155,"=",0.21,">",0.1,0.647409236988641,"F(1, 155) = 0.21, p > .10",FALSE,FALSE,FALSE,FALSE,0.68
+"36_saleem Effects of stereotypic video game portrayals on implicit and expl","F",2,155,"=",4.12,"<",0.05,0.0180570244189603,"F(2, 155) = 4.12, p < .05",FALSE,FALSE,FALSE,FALSE,0.68
+"36_saleem Effects of stereotypic video game portrayals on implicit and expl","t",NA,52,"=",2.04,"<",0.05,0.0464446361081988,"t (52) = 2.04, p <.05",FALSE,FALSE,FALSE,FALSE,0.68
+"36_saleem Effects of stereotypic video game portrayals on implicit and expl","F",2,149,"=",4.7,"<",0.05,0.0104861554449267,"F(2, 149) = 4.70, p <.05",FALSE,FALSE,FALSE,FALSE,0.68
+"36_saleem Effects of stereotypic video game portrayals on implicit and expl","F",1,148,"=",5.41,"<",0.05,0.0213793653213262,"F(1, 148) = 5.41, p <.05",FALSE,FALSE,FALSE,FALSE,0.68
+"36_saleem Effects of stereotypic video game portrayals on implicit and expl","F",1,148,"=",4.73,"<",0.05,0.0312290539696165,"F(1, 148) = 4.73, p <.05",FALSE,FALSE,FALSE,FALSE,0.68
+"36_saleem Effects of stereotypic video game portrayals on implicit and expl","t",NA,83,"=",3.17,"<",0.01,0.00213558258803638,"t (83) = 3.17, p <.01",FALSE,FALSE,FALSE,FALSE,0.68
+"36_saleem Effects of stereotypic video game portrayals on implicit and expl","F",2,148,"=",4.15,"<",0.05,0.0176361005325598,"F(2, 148) = 4.15, p
+<.05",FALSE,FALSE,FALSE,FALSE,0.68
+"36_saleem Effects of stereotypic video game portrayals on implicit and expl","F",1,74,"=",45.87,"<",1e-04,2.59984181828932e-09,"F(1, 74) = 45.87, p < .0001",FALSE,FALSE,FALSE,FALSE,0.68
+"36_saleem Effects of stereotypic video game portrayals on implicit and expl","F",2,74,"=",4.89,"<",0.05,0.010124660214194,"F(2, 74) = 4.89, p <.05",FALSE,FALSE,FALSE,FALSE,0.68
+"36_saleem Effects of stereotypic video game portrayals on implicit and expl","F",1,149,"=",5.91,"<",0.05,0.0162423294999508,"F(1, 149) = 5.91, p < .05",FALSE,FALSE,FALSE,FALSE,0.68
+"36_saleem Effects of stereotypic video game portrayals on implicit and expl","F",2,149,"=",4.29,"<",0.05,0.0154363754827443,"F(2, 149) = 4.29, p < .05",FALSE,FALSE,FALSE,FALSE,0.68
+"36_saleem Effects of stereotypic video game portrayals on implicit and expl","t",NA,52,"=",3.73,"<",0.001,0.000474557810696628,"t(52) = 3.73, p <.001",FALSE,FALSE,FALSE,FALSE,0.68
+"36_saleem Effects of stereotypic video game portrayals on implicit and expl","F",2,149,"=",3.92,"<",0.05,0.0219201181872874,"F(2, 149) = 3.92, p <.05",FALSE,FALSE,FALSE,FALSE,0.68
+"36_saleem Effects of stereotypic video game portrayals on implicit and expl","F",1,149,"=",86.81,"<",1e-04,1.49039284325036e-16,"F(1, 149) = 86.81, p < .0001",FALSE,FALSE,FALSE,FALSE,0.68
+"36_saleem Effects of stereotypic video game portrayals on implicit and expl","F",2,149,"=",4.11,"<",0.05,0.0183040206557732,"F(2, 149) = 4.11, p < .05",FALSE,FALSE,FALSE,FALSE,0.68
+"36_saleem Effects of stereotypic video game portrayals on implicit and expl","F",2,149,"=",4.99,"<",0.01,0.00798658824229539,"F(2, 149) = 4.99, p <.01",FALSE,FALSE,FALSE,FALSE,0.68
+"36_saleem Effects of stereotypic video game portrayals on implicit and expl","F",2,144,"=",1.78,">",0.1,0.172328409179224,"F(2, 144) = 1.78, p > .10",FALSE,FALSE,FALSE,FALSE,0.68
+"36_saleem Effects of stereotypic video game portrayals on implicit and expl","F",2,138,"=",4.41,"<",0.05,0.0139147945987163,"F(2, 138) = 4.41, p < .05",FALSE,FALSE,FALSE,FALSE,0.68
+"36_saleem Effects of stereotypic video game portrayals on implicit and expl","t",NA,45,"=",2.57,"<",0.05,0.0135516993618588,"t (45) = 2.57, p <.05",FALSE,FALSE,FALSE,FALSE,0.68
+"36_saleem Effects of stereotypic video game portrayals on implicit and expl","t",NA,50,"=",-2.04,"<",0.05,0.0466504345456877,"t (50) = -2.04, p <.05",FALSE,FALSE,FALSE,FALSE,0.68
+"36_saleem Effects of stereotypic video game portrayals on implicit and expl","F",2,141,"=",3.12,"<",0.05,0.047220211025367,"F(2, 141) = 3.12, p <
+.05",FALSE,FALSE,FALSE,FALSE,0.68
+"36_saleem Effects of stereotypic video game portrayals on implicit and expl","t",NA,50,"=",2.14,"<",0.05,0.0372579495532823,"t (50) = 2.14, p <.05",FALSE,FALSE,FALSE,FALSE,0.68
+"36_saleem Effects of stereotypic video game portrayals on implicit and expl","F",2,137,"=",4.13,"<",0.05,0.0181282182937691,"F(2,
+137) = 4.13, p < .05",FALSE,FALSE,FALSE,FALSE,0.68
+"36_saleem Effects of stereotypic video game portrayals on implicit and expl","t",NA,46,"=",2.24,"<",0.05,0.0299647616537013,"t (46) = 2.24, p <.05",FALSE,FALSE,FALSE,FALSE,0.68
+"36_saleem Effects of stereotypic video game portrayals on implicit and expl","F",1,72,"=",32.29,"<",1e-04,2.63841398490255e-07,"F(1, 72) =
+32.29, p < .0001",FALSE,FALSE,FALSE,FALSE,0.68
+"36_saleem Effects of stereotypic video game portrayals on implicit and expl","F",2,141,"=",4.16,"<",0.05,0.0175642562197666,"F(2, 141) = 4.16, p < .05",FALSE,FALSE,FALSE,FALSE,0.68
+"36_saleem Effects of stereotypic video game portrayals on implicit and expl","t",NA,50,"=",2.29,"<",0.001,0.0262766158334004,"t (50) = 2.29, p <.001",TRUE,FALSE,FALSE,FALSE,0.68
+"36_saleem Effects of stereotypic video game portrayals on implicit and expl","t",NA,46,"=",1.78,"=",0.08,0.0816820625504218,"t (46)
+= 1.78, p = .08",FALSE,FALSE,FALSE,FALSE,0.68
+"36_saleem Effects of stereotypic video game portrayals on implicit and expl","F",1,141,"=",36.25,"<",1e-04,1.4279290822206e-08,"F(1, 141) = 36.25, p < .0001",FALSE,FALSE,FALSE,FALSE,0.68
+"3_Price_2016_Casual games and casual learning about human biological systems","t",NA,124,"=",1.09,"=",0.278,0.27782681747394,"t(124) = 1.09, p = .278",FALSE,FALSE,FALSE,FALSE,0.4
+"3_Price_2016_Casual games and casual learning about human biological systems","t",NA,121,"=",0.725,"=",0.47,0.469851748531896,"t(121) = .725, p = .470",FALSE,FALSE,FALSE,FALSE,0.4
+"40_multiple_experimental_kveton_2019","F",3,124,"=",1.053,">",0.1,0.371726357447107,"F(3,124) = 1.053, p > .10",FALSE,FALSE,FALSE,FALSE,0.67
+"40_multiple_experimental_kveton_2019","F",3,124,"=",21.55,"<",0.01,2.67060357345414e-11,"F(3,124) = 21.550, p < .01",FALSE,FALSE,FALSE,FALSE,0.67
+"40_multiple_experimental_kveton_2019","F",3,124,"=",60.989,"<",0.01,2.71444762928024e-24,"F(3,124) =
+60.989, p < .01",FALSE,FALSE,FALSE,FALSE,0.67
+"40_multiple_experimental_kveton_2019","F",1,124,"=",2.886,"=",0.092,0.0918601919825345,"F(1,124) = 2.886, p = .092",FALSE,FALSE,FALSE,FALSE,0.67
+"49_no_control_two_expe_cicchirillo_The effects of priming racial stereotypes through violent video games","F",1,56,"=",5.35,"<",0.05,0.0244198275415047,"F(1, 56) = 5.350, p < .05",FALSE,FALSE,FALSE,FALSE,0.81
+"49_no_control_two_expe_cicchirillo_The effects of priming racial stereotypes through violent video games","F",1,56,"=",5.186,"<",0.05,0.0266093815770765,"F(1, 56) = 5.186, p < .05",FALSE,FALSE,FALSE,FALSE,0.81
+"49_no_control_two_expe_cicchirillo_The effects of priming racial stereotypes through violent video games","F",1,56,"=",7.54,"<",0.05,0.00809835196939544,"F(1, 56) = 7.54, p < .05",FALSE,FALSE,FALSE,FALSE,0.81
+"49_no_control_two_expe_cicchirillo_The effects of priming racial stereotypes through violent video games","F",1,56,"=",6.75,"<",0.05,0.0119580522164256,"F(1, 56) = 6.75, p < .05",FALSE,FALSE,FALSE,FALSE,0.81
+"49_no_control_two_expe_cicchirillo_The effects of priming racial stereotypes through violent video games","F",1,54,"=",12.957,"<",0.05,0.00069279035240069,"F(1, 54) = 12.957, p < .05",FALSE,FALSE,FALSE,FALSE,0.81
+"49_no_control_two_expe_cicchirillo_The effects of priming racial stereotypes through violent video games","F",1,54,"=",7.74,"<",0.05,0.00742454013662814,"F(1, 54) = 7.74, p < .05",FALSE,FALSE,FALSE,FALSE,0.81
+"49_no_control_two_expe_cicchirillo_The effects of priming racial stereotypes through violent video games","F",1,174,"=",5.64,"<",0.05,0.0186436311929436,"F(1, 174) = 5.64, p < .05",FALSE,FALSE,FALSE,FALSE,0.81
+"49_no_control_two_expe_cicchirillo_The effects of priming racial stereotypes through violent video games","F",1,174,"=",8.61,"<",0.05,0.00379427444462508,"F(1,174) = 8.61, p < .05",FALSE,FALSE,FALSE,FALSE,0.81
+"49_no_control_two_expe_cicchirillo_The effects of priming racial stereotypes through violent video games","F",1,174,"=",3.76,"=",0.054,0.0541102227377021,"F(1, 174) = 3.76, p = .054",FALSE,FALSE,FALSE,FALSE,0.81
+"49_no_control_two_expe_cicchirillo_The effects of priming racial stereotypes through violent video games","F",1,174,"=",4.49,"<",0.05,0.0355126860810483,"F(1, 174) = 4.49, p < .05",FALSE,FALSE,FALSE,FALSE,0.81
+"49_no_control_two_expe_cicchirillo_The effects of priming racial stereotypes through violent video games","F",1,174,"=",3.77,"<",0.05,0.0537947832272982,"F(1,174) = 3.77, p < .05",TRUE,TRUE,TRUE,FALSE,0.81
+"49_no_control_two_expe_cicchirillo_The effects of priming racial stereotypes through violent video games","F",1,181,"=",8.952,"<",0.05,0.00315835235253852,"F(1,181) = 8.952, p < .05",FALSE,FALSE,FALSE,FALSE,0.81
+"49_no_control_two_expe_cicchirillo_The effects of priming racial stereotypes through violent video games","F",1,181,"=",75.689,"<",0.001,1.99866303047336e-15,"F(1,181) = 75.689, p < .001",FALSE,FALSE,FALSE,FALSE,0.81
+"49_no_control_two_expe_cicchirillo_The effects of priming racial stereotypes through violent video games","F",2,254,"=",7.27,"<",0.001,0.000850630535930863,"F(2, 254) = 7.27, p < .001",FALSE,FALSE,FALSE,FALSE,0.81
+"49_no_control_two_expe_cicchirillo_The effects of priming racial stereotypes through violent video games","F",1,254,"=",18.29,"<",0.001,2.68752103859298e-05,"F(1, 254) = 18.29, p < .001",FALSE,FALSE,FALSE,FALSE,0.81
+"49_no_control_two_expe_cicchirillo_The effects of priming racial stereotypes through violent video games","F",1,254,"=",15.39,"<",0.001,0.000112612357288719,"F(1, 254) = 15.39, p < .001",FALSE,FALSE,FALSE,FALSE,0.81
+"49_no_control_two_expe_cicchirillo_The effects of priming racial stereotypes through violent video games","F",1,252,"=",5.05,"<",0.05,0.025491684995318,"F(1, 252)
+= 5.05, p < .05",FALSE,FALSE,FALSE,FALSE,0.81
+"49_no_control_two_expe_cicchirillo_The effects of priming racial stereotypes through violent video games","F",2,250,"=",3.07,"<",0.05,0.0481754117882576,"F(2, 250) = 3.07, p < .05",FALSE,FALSE,FALSE,FALSE,0.81
+"49_no_control_two_expe_cicchirillo_The effects of priming racial stereotypes through violent video games","F",1,181,"=",7.817,"<",0.05,0.00573457726596814,"F(1,181) = 7.817, p < .05",FALSE,FALSE,FALSE,FALSE,0.81
+"49_no_control_two_expe_cicchirillo_The effects of priming racial stereotypes through violent video games","F",1,181,"=",75.689,"<",0.001,1.99866303047336e-15,"F(1,181) = 75.689,
+p < .001",FALSE,FALSE,FALSE,FALSE,0.81
+"49_no_control_two_expe_cicchirillo_The effects of priming racial stereotypes through violent video games","F",1,98,"=",8.88,"<",0.05,0.00363541269668845,"F(1, 98) = 8.88,
+p < .05",FALSE,FALSE,FALSE,FALSE,0.81
+"49_no_control_two_expe_cicchirillo_The effects of priming racial stereotypes through violent video games","F",1,98,"=",5.22,"<",0.05,0.0244848560942209,"F(1, 98) = 5.22, p < .05",FALSE,FALSE,FALSE,FALSE,0.81
+"5_2018_Pena","F",4,167,"=",7.38,"=",0.001,1.69461553748508e-05,"F(4,
+167) = 7.38, p = 0.001",TRUE,FALSE,TRUE,FALSE,0.43
+"5_2018_Pena","F",1,169,"=",5.54,"=",0.02,0.01973626579888,"F(1,
+169) = 5.54, p = 0.02",FALSE,FALSE,FALSE,FALSE,0.43
+"5_2018_Pena","F",1,169,"=",4.56,"=",0.03,0.0341675084346561,"F(1, 169) = 4.56, p = 0.03",FALSE,FALSE,FALSE,FALSE,0.43
+"5_2018_Pena","F",1,169,"=",0.02,"=",0.88,0.887705520950715,"F(1, 169) = 0.02, p = 0.88",FALSE,FALSE,FALSE,FALSE,0.43
+"5_2018_Pena","F",1,169,"=",2.9,"=",0.09,0.0904179262711576,"F(1, 169) = 2.90, p = 0.09",FALSE,FALSE,FALSE,FALSE,0.43
+"5_2018_Pena","F",1,169,"=",2.95,"=",0.09,0.0877092969362299,"F(1, 169) = 2.95, p = 0.09",FALSE,FALSE,FALSE,FALSE,0.43
+"5_2018_Pena","F",1,169,"=",3.28,"=",0.07,0.0719047406106147,"F(1, 169) = 3.28, p = 0.07",FALSE,FALSE,FALSE,FALSE,0.43
+"5_2018_Pena","F",1,169,"=",21.76,"=",0.001,6.25356860559284e-06,"F(1, 169) = 21.76, p = 0.001",TRUE,FALSE,TRUE,FALSE,0.43
+"5_2018_Pena","F",1,169,"=",15.95,"=",0.001,9.68632176869456e-05,"F(1, 169) = 15.95, p = 0.001",TRUE,FALSE,TRUE,FALSE,0.43
+"5_2018_Pena","F",1,169,"=",0.32,"=",0.57,0.57235793615739,"F(1, 169) = 0.32,
+p = 0.57",FALSE,FALSE,FALSE,FALSE,0.43
+"6_Alblas_2018_Investigating the impact of a health game on implicit attitudes towards food","F",1,120,"=",3.14,"=",0.039,0.0789317835031667,"F (1, 120) = 3.14, p = .039",FALSE,FALSE,TRUE,TRUE,0.38
+"6_Alblas_2018_Investigating the impact of a health game on implicit attitudes towards food","F",1,120,"=",4.27,"=",0.021,0.0409425755691111,"F (1, 120) = 4.27, p = .021",TRUE,FALSE,TRUE,TRUE,0.38
+"6_Alblas_2018_Investigating the impact of a health game on implicit attitudes towards food","F",1,120,"=",8.23,"=",0.002,0.00486987159382548,"F (1, 120) = 8.23, p = .002",FALSE,FALSE,TRUE,TRUE,0.38
+"6_Alblas_2018_Investigating the impact of a health game on implicit attitudes towards food","F",1,119,"=",0.34,"=",0.281,0.560932618195228,"F (1, 119) = .34, p = .281",TRUE,FALSE,TRUE,TRUE,0.38
+"6_Alblas_2018_Investigating the impact of a health game on implicit attitudes towards food","F",1,118,"=",0.34,"=",0.282,0.560941955553179,"F (1, 118) = .34, p = .282",TRUE,FALSE,TRUE,TRUE,0.38
+"6_Alblas_2018_Investigating the impact of a health game on implicit attitudes towards food","F",1,118,"=",1.85,"=",0.088,0.176376242780507,"F (1, 118) = 1.85, p = .088",FALSE,FALSE,TRUE,TRUE,0.38
+"6_Alblas_2018_Investigating the impact of a health game on implicit attitudes towards food","F",1,118,"=",77.02,"<",0.001,1.54100577766384e-14,"F (1, 118) = 77.02, p < .001",FALSE,FALSE,FALSE,TRUE,0.38
+"6_Alblas_2018_Investigating the impact of a health game on implicit attitudes towards food","F",1,118,"=",3.64,"=",0.029,0.0588370489739887,"F (1, 118) = 3.64, p = .029",FALSE,FALSE,TRUE,TRUE,0.38
+"6_Alblas_2018_Investigating the impact of a health game on implicit attitudes towards food","F",1,118,"=",2.21,"=",0.07,0.139785778563436,"F (1, 118) = 2.21, p = .070",FALSE,FALSE,TRUE,TRUE,0.38
+"6_Alblas_2018_Investigating the impact of a health game on implicit attitudes towards food","F",1,119,"=",1.9,"=",0.085,0.170664288084642,"F (1, 119) = 1.90, p = .085",FALSE,FALSE,FALSE,TRUE,0.38
+"6_Alblas_2018_Investigating the impact of a health game on implicit attitudes towards food","F",1,119,"=",77.48,"<",0.001,1.26639840037659e-14,"F (1, 119) = 77.48, p < .001",FALSE,FALSE,FALSE,TRUE,0.38
+"6_Alblas_2018_Investigating the impact of a health game on implicit attitudes towards food","F",1,119,"=",3.69,"=",0.029,0.0571318624522806,"F (1, 119) = 3.69, p = .029",FALSE,FALSE,TRUE,TRUE,0.38
+"8_Pena_2020_Game perspective-taking effects on willingness to help immigrants","F",1,177,"=",4.054,"=",0.046,0.0455817258220084,"F(1, 177)=4.054, p=.046",FALSE,FALSE,FALSE,FALSE,0.53
+"8_Pena_2020_Game perspective-taking effects on willingness to help immigrants","F",1,177,"=",16.894,"=",0.001,6.03867265164863e-05,"F(1, 177)=16.894, p=.001",TRUE,FALSE,TRUE,FALSE,0.53
+"8_Pena_2020_Game perspective-taking effects on willingness to help immigrants","F",1,177,"=",10.847,"=",0.001,0.00119499382010226,"F(1, 177)=10.847, p=.001",FALSE,FALSE,FALSE,FALSE,0.53
+"8_Pena_2020_Game perspective-taking effects on willingness to help immigrants","F",1,177,"=",16.847,"=",0.001,6.17668468512745e-05,"F(1, 177)=16.847, p=.001",TRUE,FALSE,TRUE,FALSE,0.53
+"8_Pena_2020_Game perspective-taking effects on willingness to help immigrants","F",1,177,"=",2.828,"=",0.094,0.0943971675417703,"F(1, 177)=2.828, p=.094",FALSE,FALSE,FALSE,FALSE,0.53
+"8_Pena_2020_Game perspective-taking effects on willingness to help immigrants","F",1,177,"=",14.566,"=",0.001,0.000186899988099199,"F(1, 177)=14.566, p=.001",TRUE,FALSE,TRUE,FALSE,0.53
+"8_Pena_2020_Game perspective-taking effects on willingness to help immigrants","F",1,177,"=",14.938,"=",0.001,0.00015579598274319,"F(1, 177)=14.938, p=.001",TRUE,FALSE,TRUE,FALSE,0.53
+"8_Pena_2020_Game perspective-taking effects on willingness to help immigrants","F",1,177,"=",16.847,"=",0.001,6.17668468512745e-05,"F(1,
+177)=16.847, p=.001",TRUE,FALSE,TRUE,FALSE,0.53
+"9_Soekarjo_2015_Measuring Effectiveness of Persuasive Games Using an Informative Control","F",5,40,"=",0.3,"=",0.91,0.909952561871571,"F
+(5,40) = .30, p = .91",FALSE,FALSE,FALSE,FALSE,0.79
+"9_Soekarjo_2015_Measuring Effectiveness of Persuasive Games Using an Informative Control","t",NA,22,"=",0.76,"=",0.46,0.455322508704386,"t(22) = .76, p = .46",FALSE,FALSE,FALSE,FALSE,0.79
+"9_Soekarjo_2015_Measuring Effectiveness of Persuasive Games Using an Informative Control","t",NA,22,"=",1.88,"=",0.07,0.0734158909630113,"t(22) = 1.88,
+p = .07",FALSE,FALSE,FALSE,FALSE,0.79
+"9_Soekarjo_2015_Measuring Effectiveness of Persuasive Games Using an Informative Control","F",8,37,"=",0.49,"=",0.86,0.855386906294906,"F
+(8,37) = .49, p = .86",FALSE,FALSE,FALSE,FALSE,0.79
+"9_Soekarjo_2015_Measuring Effectiveness of Persuasive Games Using an Informative Control","t",NA,22,"=",1.7,"=",0.1,0.103227398842182,"t(22) = 1.70, p = .10",FALSE,FALSE,FALSE,FALSE,0.79
+"9_Soekarjo_2015_Measuring Effectiveness of Persuasive Games Using an Informative Control","t",NA,22,"=",0.42,"=",0.68,0.678558996062045,"t(22) = .42,
+p = .68",FALSE,FALSE,FALSE,FALSE,0.79
+"9_Soekarjo_2015_Measuring Effectiveness of Persuasive Games Using an Informative Control","F",5,40,"=",1.3,"=",0.29,0.283308404521598,"F (5,40) = 1.30, p = .29",FALSE,FALSE,FALSE,FALSE,0.79
+"9_Soekarjo_2015_Measuring Effectiveness of Persuasive Games Using an Informative Control","t",NA,22,"=",4.69,"<",0.01,0.000111890684489702,"t(22) = 4.69, p < .01",FALSE,FALSE,FALSE,FALSE,0.79
+"9_Soekarjo_2015_Measuring Effectiveness of Persuasive Games Using an Informative Control","t",NA,22,"=",7.28,"<",0.01,2.72289723011077e-07,"t(22) = 7.28, p < .01",FALSE,FALSE,FALSE,FALSE,0.79
+"9_Soekarjo_2015_Measuring Effectiveness of Persuasive Games Using an Informative Control","F",1,44,"=",9.64,"<",0.01,0.00332530369929437,"F (1,44) = 9.64, p < .01",FALSE,FALSE,FALSE,FALSE,0.79
+"9_Soekarjo_2015_Measuring Effectiveness of Persuasive Games Using an Informative Control","F",1,44,"=",4.81,"=",0.03,0.0336248452733699,"F (1,44) = 4.81, p = .03",FALSE,FALSE,FALSE,FALSE,0.79
