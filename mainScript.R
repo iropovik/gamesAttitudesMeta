@@ -36,7 +36,7 @@ side <- "right"
 test <- "one-tailed"
 
 # No of simulations for the permutation-based bias correction models and p-curve specifically
-nIterations <- 20 # Set to 5 just to make code checking/running fast. For the final analysis, it should be set to 5000.
+nIterations <- 500 # Set to 5 just to make code checking/running fast. For the final analysis, it should be set to 5000.
 nIterationsPcurve <- 3
 nIterationVWsensitivity <- 3 # Number of iterations for the Vevea & Woods (2005) step function model sensitivity analysis 
 
@@ -118,6 +118,7 @@ rmaOverall <- data %>% rmaCustom()
 
 fit <- RoBMA(d = data$yi, se = sqrt(data$vi), study_names = data$result, seed = 1,
              chains = 2, iter = 4000)
+summary(fit)
 
 #'### Table 
 maResultsTable(resultsOverall, bias = T)

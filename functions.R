@@ -267,11 +267,11 @@ bias <- function(data = NA, rmaObject = NA){
   esPrec <- cor(rmaObject[[1]]$yi, sqrt(rmaObject[[1]]$vi), method = "kendall")
   
   # Small-study effects correction
-  # 3-parameter selection model
-  resultSM <- selectionModel(data, minNoPvals = minPvalues, nIteration = nIterations, fallback = fallback)
-  
   # Vevea & Woods selection model
   resultsVeveaWoodsSM <- veveaWoodsSM(data, stepsDelta)
+  
+  # 3-parameter selection model
+  resultSelModel <- selectionModel(data, minNoPvals = minPvalues, nIteration = nIterations, fallback = fallback)
   
   # PET-PEESE
   petPeeseOut <- petPeese(data)
@@ -298,7 +298,7 @@ bias <- function(data = NA, rmaObject = NA){
   
   # Publication bias results
   return(list("ES-precision correlation" = esPrec,
-              "4/3PSM" = resultSM,
+              "4/3PSM" = resultSelModel,
               "Vevea & Woods SM" = resultsVeveaWoodsSM,
               "PET-PEESE" = petPeeseOut,
               "WAAP-WLS" = waapWLSout,

@@ -1,5 +1,5 @@
 # Vymazat posledny stlpec a spodne riadky
-# odstranit vsetky "~?" a ";"
+# odstranit vsetky "~?" a ";" a "dissertation"
 #odstranit . v F riadok 19; skryte znaky na konci v mEXP riadok 6-9
 #vymazat riadok 131
 # remove "in press"
@@ -119,8 +119,8 @@ dat <- dat %>% mutate(yi = ifelse(is.na(yi) & (!is.na(yiConv) & !is.na(predicted
                       persuasiveMechanicImpl = ifelse(persuasive_mechanic == "Perspective-taking", 0, ifelse(is.na(persuasive_mechanic), NA, 1)),
                       persuasiveMechanicExpl = ifelse(persuasive_mechanic == "Stereotype rehearsal", 0, ifelse(is.na(persuasive_mechanic), NA, 1)),
                       gamegenreBinary = ifelse(gamegenre %in% c("action game", "action violent game"), "action games", ifelse(is.na(gamegenre), NA, "non-action games")),
-                      inLabAdministrationBinary <- ifelse(inLabAdministration == 1, 1, ifelse(is.na(inLabAdministration), NA, 0)),
-                      Att_type_exp_imp <- factor(as.numeric(Att_type_exp_imp), levels = c(0, 1)))
+                      inLabAdministrationBinary = ifelse(inLabAdministration == 1, 1, ifelse(is.na(inLabAdministration), NA, 0)),
+                      Att_type_exp_imp = factor(as.numeric(Att_type_exp_imp), levels = c(0, 1)))
 
 # GRIM & GRIMMER Test
 dat <- dat %>% mutate(items = ifelse(is.na(items), 0, items))
