@@ -11,6 +11,71 @@
 #' always_allow_html: yes
 #' ---
 
+#' **This is the supplementary analytic output for the paper The effect of videogames on attitudes - a meta-analysis **
+#' 
+#' **It reports detailed results for all models reported in the paper. The analytic R script by which this html report was generated can be found on the project's OSF page at: https://osf.io/4aeqt/**
+#' 
+#' ------------------------------------
+#' 
+#' **Brief information about the methods used in the analysis:**
+#' 
+#' **RMA results with model-based SEs**
+#'k = number of studies; sqrt in "Variance components" = tau, the standard deviation of true effects; estimate in "Model results" = naive MA estimate
+#'
+#' **RVE SEs with Satterthwaite small-sample correction**
+#' Estimate based on a multilevel RE model with constant sampling correlation model (CHE - correlated hierarchical effects - working model) (Pustejovsky & Tipton, 2020; https://osf.io/preprints/metaarxiv/vyfcj/). 
+#' Interpretation of naive-meta-analysis should be based on these estimates.
+#'
+#' **Prediction interval**
+#' Shows the expected range of true effects in similar studies.
+#' As an approximation, in 95% of cases the true effect in a new *published* study can be expected to fall between PI LB and PI UB.
+#' Note that these are non-adjusted estimates. An unbiased newly conducted study will more likely fall in an interval centered around bias-adjusted estimate with a wider CI width.
+#'
+#' **Heterogeneity**
+#' Tau can be interpreted as the total amount of heterogeneity in the true effects. 
+#' I^2$ represents the ratio of true heterogeneity to total variance across the observed effect estimates. Estimates calculated by two approaches are reported.
+#' This is followed by separate estimates of between- and within-cluster heterogeneity and estimated intra-class correlation of underlying true effects.
+#' 
+#' **Proportion of significant results**
+#' What proportion of effects were statistically at the alpha level of .05.
+#' 
+#' **ES-precision correlation**
+#' Kendalls's correlation between the ES and precision.
+#' 
+#' **4/3PSM**
+#' Applies a permutation-based, step-function 4-parameter selection model (one-tailed p-value steps = c(.025, .5, 1)). 
+#' Falls back to 3-parameter selection model if at least one of the three p-value intervals contains less than 5 p-values.
+#' For this meta-analysis, we applied 3-parameter selection model by default as there were only 11 independent effects in the opposite direction overall (6%), causing the estimates to be unstable across iterations.
+#' pvalue = p-value testing H0 that the effect is zero. ciLB and ciUB are lower and upper bound of the CI. k = number of studies. steps = 3 means that the 4PSM was applied, 2 means that the 3PSM was applied.
+#' 
+#' **PET-PEESE**
+#' Estimated effect size of an infinitely precise study. Using 4/3PSM as the conditional estimator instead of PET (can be changed to PET). If the PET-PEESE estimate is in the opposite direction, the effect can be regarded nil. 
+#' By default (can be changed to PET), the function employs a modified sample-size based estimator (see https://www.jepusto.com/pet-peese-performance/). 
+#' It also uses the same RVE sandwich-type based estimator in a CHE (correlated hierarchical effects) working model with the identical random effects structure as the primary (naive) meta-analytic model. 
+#' 
+#' We report results for both, PET and PEESE, with the first reported one being the primary (based on the conditional estimator).
+#' 
+#' **WAAP-WLS**
+#' The combined WAAP-WLS estimator (weighted average of the adequately powered - weighted least squares) tries to identify studies that are adequately powered to detect the meta-analytic effect. 
+#' If there is less than two such studies, the method falls back to the WLS estimator (Stanley & Doucouliagos, 2015). If there are at least two adequately powered studies, WAAP returns a WLS estimate based on effects from only those studies.
+#' 
+#' type = 1: WAAP estimate, 2: WLS estimate. kAdequate = number of adequately powered studies
+#' 
+#' **p-uniform**
+#' P-uniform* is a selection model conceptually similar to p-curve. It makes use of the fact that p-values follow a uniform distribution at the true effect size while it includes also nonsignificant effect sizes.
+#' Permutation-based version of p-uniform method, the so-called p-uniform* (van Aert, van Assen, 2021).
+#' 
+#' **p-curve**
+#' Permutation-based p-curve method. Output should be self-explanatory. For more info see p-curve.com
+#' 
+#' **Power for detecting SESOI and bias-corrected parameter estimates**
+#' Estimates of the statistical power for detecting a smallest effect sizes of interest equal to .20, .50, and .70 in SD units (Cohen's d). 
+#' A sort of a thought experiment, we also assumed that population true values equal the bias-corrected estimates (4/3PSM or PET-PEESE) and computed power for those.
+#' 
+#' **Handling of dependencies in bias-correction methods**
+#' To handle dependencies among the effects, the 4PSM, p-curve, p-uniform are implemented using a permutation-based procedure, randomly selecting only one focal effect (i.e., excluding those which were not coded as being focal) from a single study and iterating nIterations times.
+#' Lastly, the procedure selects the result with the median value of the ES estimate (4PSM, p-uniform) or median z-score of the full p-curve (p-curve).
+
 #+ setup, include = FALSE
 # NOTE: Please note that to run the script, you need the development versions of metafor and dmetar packages from github.
 knitr::opts_chunk$set(echo = FALSE, warning = FALSE)
@@ -36,9 +101,14 @@ side <- "right"
 test <- "one-tailed"
 
 # No of simulations for the permutation-based bias correction models and p-curve specifically
-nIterations <- 200 # Set to 5 just to make code checking/running fast. For the final analysis, it should be set to 5000.
-nIterationsPcurve <- 200
-nIterationVWsensitivity <- 200 # Number of iterations for the Vevea & Woods (2005) step function model sensitivity analysis 
+nIterations <- 500 # Set to 5 just to make code checking/running fast.
+nIterationsPcurve <- 300
+nIterationVWsensitivity <- 300 # Number of iterations for the Vevea & Woods (2005) step function model sensitivity analysis 
+
+# Number of chains and iterations for Robust Bayesian model-averaging approach
+runRobMA <- TRUE
+robmaChains <- 2
+robmaSamples <- 1000
 
 # Controls for PET-PEESE
 condEst <- FALSE
@@ -68,6 +138,7 @@ source("pcurvePlotOption.R")
 source("esConversion.R")
 statcheck <- read_csv("statcheck.csv")
 funnel <- metafor::funnel
+forest <- metafor::forest
 
 # Descriptives ------------------------------------------------------------
 
@@ -128,10 +199,9 @@ maResultsTable(resultsOverall, bias = T)
 
 #'### Forest plot
 par(mfrow = c(1,2))
-data %$%
-  forest(yi, vi, at = c(-2, -1.5, -1, -.5, 0, .5, 1, 1.5, 2, 2.5),
+data %$% metafor::forest(yi, vi, at = c(-2, -1.5, -1, -.5, 0, .5, 1, 1.5, 2, 2.5),
          xlim = c(-3.5,4.5), alim = c(-3, 3), xlab = "Hedges' g for overall effect",        ### adjust horizontal plot region limits
-         subset = order(vi),        ### order by size of yi
+         order = order(vi),        ### order by size of yi
          slab = NA, annotate = FALSE, ### remove study labels and annotations
          efac = 0,                  ### remove vertical bars at end of CIs
          pch = 19,                  ### changing point symbol to filled circle
@@ -145,6 +215,7 @@ addpoly(rmaOverall[[1]], row = -2, mlab = "", cex = 1, annotate = FALSE)
 funnel(rmaOverall[[1]], level=c(90, 95, 99), shade=c("white", "gray", "darkgray"), refline = 0, pch = 20, yaxis = "sei", xlab = "Hedges' g for overall effect", xlim = c(-1.2, 2), steps = 7, digits = c(1,2))
 
 #'### p-curve plot
+par(mfrow = c(1,1))
 quiet(pcurveMod(metaResultPcurve, effect.estimation = FALSE, plot = TRUE))
 title("Overall effect", cex.main = 1)
 
@@ -172,7 +243,7 @@ resultsEffType$Explicit
 resultsEffType$Implicit
 
 #'### Table 
-resultsEffType %>% map(maResultsTable, bias = T) %>% rbind.data.frame() %>% t() %>% noquote()
+do.call(rbind, resultsEffType %>% map(maResultsTable, bias = T)) %>% noquote() %>% t()
 
 #'### Plots
 #'
@@ -187,7 +258,7 @@ title("Implicit attitudes", cex.main = 1)
 #'### Forest plots for the explicit and implicit attitudes effects.
 datExplicit %$% forest(yi, vi, at = c(-1, -.5, 0, .5, 1, 1.5, 2, 2.5),
                                                   #xlim = c(-1.5,2.5), alim = c(-1, 2.5), xlab = "Hedges' g",        ### adjust horizontal plot region limits
-                                                  subset = order(vi),        ### order by size of yi
+                                                  order = order(vi),        ### order by size of yi
                                                   slab = NA, annotate = FALSE, ### remove study labels and annotations
                                                   efac = 0,                  ### remove vertical bars at end of CIs
                                                   pch = 19,                  ### changing point symbol to filled circle
@@ -201,7 +272,7 @@ addpoly(rmaObjects[[2]][[1]], row = .2, mlab = "", cex = 2, annotate = F)
 
 datImplicit %$% forest(yi, vi, at = c(-1, -.5, 0, .5, 1, 1.5, 2, 2.5),
                                                   #xlim = c(-1.5,2.5), alim = c(-1, 2.5), xlab = "Hedges' g",        ### adjust horizontal plot region limits
-                                                  subset = order(vi),        ### order by size of yi
+                                                  order = order(vi),        ### order by size of yi
                                                   slab = NA, annotate = FALSE, ### remove study labels and annotations
                                                   efac = 0,                  ### remove vertical bars at end of CIs
                                                   pch = 19,                  ### changing point symbol to filled circle
@@ -265,8 +336,8 @@ rmaModDurIntImplicit <- datImplicit %$% rma.mv(yi ~ 0 + I(interventionDuration.m
 
 #'## H3: The magnitude of explicit attitude change is smaller in studies using control groups with topic-related activities (Controls_string=”Activity related”) than in studies using control groups with topic-unrelated activities (Controls string = “Activity unrelated” || “Game diff mechanic” || “Game sim mechanic” || “Nothing” || “Combination”).   
 data$controlsActivityRelated <- ifelse(data$Controls_string == "Activity related", 1, ifelse(is.na(data$Controls_string), NA, 0))
-rmaModActRelExplicit <- data %>% filter(Att_type_exp_imp == 1) %$% rma.mv(yi ~ 0 + factor(controlsActivityRelated), V = viMatrixExplicit, method = "REML", random = ~ 1|study/result, sparse = TRUE)
-(rveModActRelExplicit <- data %>% filter(Att_type_exp_imp == 1) %$% list("test" = coef_test(rmaModActRelExplicit, vcov = "CR2", test = "z", cluster = study),
+rmaModActRelExplicit <- data %>% filter(Att_type_exp_imp == "Explicit") %$% rma.mv(yi ~ 0 + factor(controlsActivityRelated), V = viMatrixExplicit, method = "REML", random = ~ 1|study/result, sparse = TRUE)
+(rveModActRelExplicit <- data %>% filter(Att_type_exp_imp == "Explicit") %$% list("test" = coef_test(rmaModActRelExplicit, vcov = "CR2", test = "z", cluster = study),
                                                                          "CIs" = conf_int(rmaModActRelExplicit, vcov = "CR2", test = "z", cluster = study),
                                                                          "RVE Wald test" = Wald_test(rmaModActRelExplicit, constraints = constrain_equal(1:2), vcov = "CR2")))
 
@@ -322,7 +393,7 @@ rmaModAge <- data %$% rma.mv(yi ~ meanAge, V = viMatrix, method = "REML", random
 rmaModGender <- data %$% rma.mv(yi ~ percFemale, V = viMatrix, method = "REML", random = ~ 1|study/result, sparse = TRUE)
 (rveModGender <- data %$% list("test" = coef_test(rmaModGender, vcov = "CR2", test = "z", cluster = study), "CIs" = conf_int(rmaModGender, vcov = "CR2", test = "z", cluster = study)))
 
-.#'## Methodological moderators
+#'## Methodological moderators
 #'
 #'### In-lab administration
 rmaModInLab <- data %$% rma.mv(yi ~ 0 + factor(inLabAdministrationBinary), V = viMatrix, method = "REML", random = ~ 1|study/result, sparse = TRUE)
@@ -464,68 +535,3 @@ statcheck %>% filter(Error == TRUE) %>% select(Source) %>% unique() %>% nrow()/l
 
 # Record session info
 sessionInfo()
-
-#' **This is the supplementary analytic output for the paper The effect of videogames on attitudes - a meta-analysis **
-#' 
-#' **It reports detailed results for all models reported in the paper. The analytic R script by which this html report was generated can be found on the project's OSF page at: [LINK].**
-#' 
-#' ------------------------------------
-#' 
-#' **Brief information about the methods used in the analysis:**
-#' 
-#' **RMA results with model-based SEs**
-#'k = number of studies; sqrt in "Variance components" = tau, the standard deviation of true effects; estimate in "Model results" = naive MA estimate
-#'
-#' **RVE SEs with Satterthwaite small-sample correction**
-#' Estimate based on a multilevel RE model with constant sampling correlation model (CHE - correlated hierarchical effects - working model) (Pustejovsky & Tipton, 2020; https://osf.io/preprints/metaarxiv/vyfcj/). 
-#' Interpretation of naive-meta-analysis should be based on these estimates.
-#'
-#' **Prediction interval**
-#' Shows the expected range of true effects in similar studies.
-#' As an approximation, in 95% of cases the true effect in a new *published* study can be expected to fall between PI LB and PI UB.
-#' Note that these are non-adjusted estimates. An unbiased newly conducted study will more likely fall in an interval centered around bias-adjusted estimate with a wider CI width.
-#'
-#' **Heterogeneity**
-#' Tau can be interpreted as the total amount of heterogeneity in the true effects. 
-#' I^2$ represents the ratio of true heterogeneity to total variance across the observed effect estimates. Estimates calculated by two approaches are reported.
-#' This is followed by separate estimates of between- and within-cluster heterogeneity and estimated intra-class correlation of underlying true effects.
-#' 
-#' **Proportion of significant results**
-#' What proportion of effects were statistically at the alpha level of .05.
-#' 
-#' **ES-precision correlation**
-#' Kendalls's correlation between the ES and precision.
-#' 
-#' **4/3PSM**
-#' Applies a permutation-based, step-function 4-parameter selection model (one-tailed p-value steps = c(.025, .5, 1)). 
-#' Falls back to 3-parameter selection model if at least one of the three p-value intervals contains less than 5 p-values.
-#' For this meta-analysis, we applied 3-parameter selection model by default as there were only 11 independent effects in the opposite direction overall (6%), causing the estimates to be unstable across iterations.
-#' pvalue = p-value testing H0 that the effect is zero. ciLB and ciUB are lower and upper bound of the CI. k = number of studies. steps = 3 means that the 4PSM was applied, 2 means that the 3PSM was applied.
-#' 
-#' **PET-PEESE**
-#' Estimated effect size of an infinitely precise study. Using 4/3PSM as the conditional estimator instead of PET (can be changed to PET). If the PET-PEESE estimate is in the opposite direction, the effect can be regarded nil. 
-#' By default (can be changed to PET), the function employs a modified sample-size based estimator (see https://www.jepusto.com/pet-peese-performance/). 
-#' It also uses the same RVE sandwich-type based estimator in a CHE (correlated hierarchical effects) working model with the identical random effects structure as the primary (naive) meta-analytic model. 
-#' 
-#' We report results for both, PET and PEESE, with the first reported one being the primary (based on the conditional estimator).
-#' 
-#' **WAAP-WLS**
-#' The combined WAAP-WLS estimator (weighted average of the adequately powered - weighted least squares) tries to identify studies that are adequately powered to detect the meta-analytic effect. 
-#' If there is less than two such studies, the method falls back to the WLS estimator (Stanley & Doucouliagos, 2015). If there are at least two adequately powered studies, WAAP returns a WLS estimate based on effects from only those studies.
-#' 
-#' type = 1: WAAP estimate, 2: WLS estimate. kAdequate = number of adequately powered studies
-#' 
-#' **p-uniform**
-#' P-uniform* is a selection model conceptually similar to p-curve. It makes use of the fact that p-values follow a uniform distribution at the true effect size while it includes also nonsignificant effect sizes.
-#' Permutation-based new version of p-uniform method, the so-called p-uniform* (van Aert, van Assen, 2021).
-#' 
-#' **p-curve**
-#' Permutation-based p-curve method. Output should be self-explanatory. For more info see p-curve.com
-#' 
-#' **Power for detecting SESOI and bias-corrected parameter estimates**
-#' Estimates of the statistical power for detecting a smallest effect sizes of interest equal to .20, .50, and .70 in SD units (Cohen's d). 
-#' A sort of a thought experiment, we also assumed that population true values equal the bias-corrected estimates (4/3PSM or PET-PEESE) and computed power for those.
-#' 
-#' **Handling of dependencies in bias-correction methods**
-#' To handle dependencies among the effects, the 4PSM, p-curve, p-uniform are implemented using a permutation-based procedure, randomly selecting only one focal effect (i.e., excluding those which were not coded as being focal) from a single study and iterating nIterations times.
-#' Lastly, the procedure selects the result with the median value of the ES estimate (4PSM, p-uniform) or median z-score of the full p-curve (p-curve).
