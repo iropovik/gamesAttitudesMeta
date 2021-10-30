@@ -1,6 +1,6 @@
 #' ---
-#' title: "The effect of videogames on attitude change - a meta-analysis"
-#' author: "Ivan Ropovik"
+#' title: "Video Games and Attitude Change: A Meta-analysis"
+#' author: ""
 #' date: "`r Sys.Date()`"
 #' output:
 #'    html_document:
@@ -11,7 +11,7 @@
 #' always_allow_html: yes
 #' ---
 
-#' **This is the supplementary analytic output for the paper The effect of videogames on attitudes - a meta-analysis **
+#' **This is the supplementary analytic output for the paper Video Games and Attitude Change: A Meta-analysis**
 #' 
 #' **It reports detailed results for all models reported in the paper. The analytic R script by which this html report was generated can be found on the project's OSF page at: https://osf.io/4aeqt/**
 #' 
@@ -20,7 +20,7 @@
 #' **Brief information about the methods used in the analysis:**
 #' 
 #' **RMA results with model-based SEs**
-#'k = number of studies; sqrt in "Variance components" = tau, the standard deviation of true effects; estimate in "Model results" = naive MA estimate
+#' k = number of studies; sqrt in "Variance components" = tau, the standard deviation of true effects; estimate in "Model results" = naive MA estimate
 #'
 #' **RVE SEs with Satterthwaite small-sample correction**
 #' Estimate based on a multilevel RE model with constant sampling correlation model (CHE - correlated hierarchical effects - working model) (Pustejovsky & Tipton, 2020; https://osf.io/preprints/metaarxiv/vyfcj/). 
@@ -47,6 +47,7 @@
 #' Falls back to 3-parameter selection model if at least one of the three p-value intervals contains less than 5 p-values.
 #' For this meta-analysis, we applied 3-parameter selection model by default as there were only 11 independent effects in the opposite direction overall (6%), causing the estimates to be unstable across iterations.
 #' pvalue = p-value testing H0 that the effect is zero. ciLB and ciUB are lower and upper bound of the CI. k = number of studies. steps = 3 means that the 4PSM was applied, 2 means that the 3PSM was applied.
+#' We also ran two sensitivity analyses of the selection model, the Vevea & Woods (2005) step function model with a priori defined selection weights and the Robust Bayesian Meta-analysis model employing the model-averaging approach (Bartoš & Maier, 2020).
 #' 
 #' **PET-PEESE**
 #' Estimated effect size of an infinitely precise study. Using 4/3PSM as the conditional estimator instead of PET (can be changed to PET). If the PET-PEESE estimate is in the opposite direction, the effect can be regarded nil. 
@@ -101,14 +102,14 @@ side <- "right"
 test <- "one-tailed"
 
 # No of simulations for the permutation-based bias correction models and p-curve specifically
-nIterations <- 500 # Set to 5 just to make code checking/running fast.
-nIterationsPcurve <- 300
-nIterationVWsensitivity <- 300 # Number of iterations for the Vevea & Woods (2005) step function model sensitivity analysis 
+nIterations <- 5000 # Set to 5 just to make code checking/running fast.
+nIterationsPcurve <- 200
+nIterationVWsensitivity <- 200 # Number of iterations for the Vevea & Woods (2005) step function model sensitivity analysis 
 
 # Number of chains and iterations for Robust Bayesian model-averaging approach
 runRobMA <- TRUE
 robmaChains <- 2
-robmaSamples <- 1000
+robmaSamples <- 2000
 
 # Controls for PET-PEESE
 condEst <- FALSE
@@ -187,12 +188,10 @@ weighted.mean(dat$meanAge, dat$ni, na.rm = T)
 #'## H1: Videogames induce a change in players’ explicit (H1a) and implicit attitudes (H1b).
 #'
 #' Number of iterations run equal to `r nIterationsPcurve` for p-curve and `r nIterations` for all other bias correction functions.
+#' For sensitivity analyses, we ran `r nIterationVWsensitivity` iterations for the Vevea & Woods (2005) step function model.
+#' For supplementary robust bayesian model-averaging approach, we employed `r robmaChains` MCMC chains with `r robmaSamples` sampling iterations (2/5 burnin).
 rmaOverall <- data %>% rmaCustom()
 (resultsOverall <- data %>% maResults(., rmaObject = rmaOverall, bias = T))
-
-#fit <- RoBMA(d = data$yi, se = sqrt(data$vi), study_names = data$result, seed = 1,
-#             chains = 2, iter = 4000)
-#summary(fit)
 
 #'### Table 
 maResultsTable(resultsOverall, bias = T)
@@ -200,7 +199,7 @@ maResultsTable(resultsOverall, bias = T)
 #'### Forest plot
 par(mfrow = c(1,2))
 data %$% metafor::forest(yi, vi, at = c(-2, -1.5, -1, -.5, 0, .5, 1, 1.5, 2, 2.5),
-         xlim = c(-3.5,4.5), alim = c(-3, 3), xlab = "Hedges' g for overall effect",        ### adjust horizontal plot region limits
+         xlim = c(-3.5,4.5), alim = c(-3, 3), xlab = "Hedges' g for overall effect",        
          order = order(vi),        ### order by size of yi
          slab = NA, annotate = FALSE, ### remove study labels and annotations
          efac = 0,                  ### remove vertical bars at end of CIs
@@ -257,7 +256,7 @@ title("Implicit attitudes", cex.main = 1)
 
 #'### Forest plots for the explicit and implicit attitudes effects.
 datExplicit %$% forest(yi, vi, at = c(-1, -.5, 0, .5, 1, 1.5, 2, 2.5),
-                                                  #xlim = c(-1.5,2.5), alim = c(-1, 2.5), xlab = "Hedges' g",        ### adjust horizontal plot region limits
+                                                  #xlim = c(-1.5,2.5), alim = c(-1, 2.5), xlab = "Hedges' g",        
                                                   order = order(vi),        ### order by size of yi
                                                   slab = NA, annotate = FALSE, ### remove study labels and annotations
                                                   efac = 0,                  ### remove vertical bars at end of CIs
@@ -271,7 +270,7 @@ addpoly(rmaObjects[[2]][[1]], row = .2, mlab = "", cex = 2, annotate = F)
 
 
 datImplicit %$% forest(yi, vi, at = c(-1, -.5, 0, .5, 1, 1.5, 2, 2.5),
-                                                  #xlim = c(-1.5,2.5), alim = c(-1, 2.5), xlab = "Hedges' g",        ### adjust horizontal plot region limits
+                                                  #xlim = c(-1.5,2.5), alim = c(-1, 2.5), xlab = "Hedges' g",        
                                                   order = order(vi),        ### order by size of yi
                                                   slab = NA, annotate = FALSE, ### remove study labels and annotations
                                                   efac = 0,                  ### remove vertical bars at end of CIs
@@ -309,7 +308,7 @@ rmaObjectExpImpCov <- data %$% rma.mv(yi ~ 0 + factor(Att_type_exp_imp) + overal
                                    "RVE Wald test" = Wald_test(rmaObjectExpImpCov, constraints = constrain_equal(1:2), vcov = "CR2")))
 
 
-#'## H2: Duration of intervention (=“interventionDuration” ) is positively related to the magnitude of explicit (H2a) and implicit (H2b) attitude change. 
+#'## H2: Duration of intervention is positively related to the magnitude of explicit (H2a) and implicit (H2b) attitude change. 
 #'
 #' The below reported meta-regressions are all implemented as a multivariate RVE-based models using the CHE working model (Pustejovsky & Tipton, 2020; https://osf.io/preprints/metaarxiv/vyfcj/).
 #' Testing of contrasts is carried out using a robust Wald-type test testing the equality of estimates across levels of the moderator. 
@@ -334,14 +333,14 @@ viMatrixImplicit <- datImplicit %$% impute_covariance_matrix(vi, cluster = study
 rmaModDurIntImplicit <- datImplicit %$% rma.mv(yi ~ 0 + I(interventionDuration.m./60), V = viMatrixImplicit, method = "REML", random = ~ 1|study/result, sparse = TRUE)
 (rveModDurIntImplicit <- datImplicit %$% list("test" = coef_test(rmaModDurIntImplicit, vcov = "CR2", test = "z", cluster = study), "CIs" = conf_int(rmaModDurIntImplicit, vcov = "CR2", test = "z", cluster = study)))
 
-#'## H3: The magnitude of explicit attitude change is smaller in studies using control groups with topic-related activities (Controls_string=”Activity related”) than in studies using control groups with topic-unrelated activities (Controls string = “Activity unrelated” || “Game diff mechanic” || “Game sim mechanic” || “Nothing” || “Combination”).   
+#'## H3: The magnitude of explicit attitude change is smaller in studies using control groups with topic-related activities than in studies using control groups with topic-unrelated activities.
 data$controlsActivityRelated <- ifelse(data$Controls_string == "Activity related", 1, ifelse(is.na(data$Controls_string), NA, 0))
 rmaModActRelExplicit <- data %>% filter(Att_type_exp_imp == "Explicit") %$% rma.mv(yi ~ 0 + factor(controlsActivityRelated), V = viMatrixExplicit, method = "REML", random = ~ 1|study/result, sparse = TRUE)
 (rveModActRelExplicit <- data %>% filter(Att_type_exp_imp == "Explicit") %$% list("test" = coef_test(rmaModActRelExplicit, vcov = "CR2", test = "z", cluster = study),
                                                                          "CIs" = conf_int(rmaModActRelExplicit, vcov = "CR2", test = "z", cluster = study),
                                                                          "RVE Wald test" = Wald_test(rmaModActRelExplicit, constraints = constrain_equal(1:2), vcov = "CR2")))
 
-#'## H4: Videogames change player's implicit attitudes only if compared to control groups with unrelated activities towards the measured topic (H8a) (Controls string = “Activity unrelated” || “Game diff mechanic” || “Game sim mechanic” || “Nothing” || “Combination”), but not if compared to control groups using related activities (H8b) (Controls_string= ”Activity related”) towards the measured phenomena.
+#'## H4: Videogames change player's implicit attitudes only if compared to control groups with unrelated activities towards the measured topic (H8a), but not if compared to control groups using related activities (H8b) towards the measured phenomena.
 #'
 #' No such implicit studies
 # rmaModActRelImplicit <- data %>% filter(Att_type_exp_imp == 0) %$% rma.mv(yi ~ 0 + factor(controlsActivityRelated), V = viMatrixImplicit, method = "REML", random = ~ 1|study/result, sparse = TRUE)
@@ -349,20 +348,20 @@ rmaModActRelExplicit <- data %>% filter(Att_type_exp_imp == "Explicit") %$% rma.
 #                                                                           "CIs" = conf_int(rmaModActRelImplicit, vcov = "CR2", test = "z", cluster = study),
 #                                                                           "RVE Wald test" = Wald_test(rmaModActRelImplicit, constraints = constrain_equal(1:2), vcov = "CR2")))
 
-#'## H5: Implicit attitudes are more affected by games using Stereotype Rehearsal and Meaningful feedback (persuasive mechanic = Stereotype Rehearsal || Reward System || procedural rhetorics || economical model) as persuasive mechanics than by other game mechanics (persuasive mechanic = perspective-taking).
+#'## H5: Implicit attitudes are more affected by games using Stereotype Rehearsal and Meaningful feedback as persuasive mechanics than by other game mechanics.
 rmaModPersMechImpl <- datImplicit %$% rma.mv(yi ~ 0 + factor(persuasiveMechanicImpl), V = viMatrixImplicit, method = "REML", random = ~ 1|study/result)
 (rveModPersMechImpl <- datImplicit %$% list("test" = coef_test(rmaModPersMechImpl, vcov = "CR2", test = "Satterthwaite", cluster = study), 
                                                                        "CIs" = conf_int(rmaModPersMechImpl, vcov = "CR2", test = "Satterthwaite", cluster = study),
                                                                        "RVE Wald test" = Wald_test(rmaModPersMechImpl, constraints = constrain_equal(1:2), vcov = "CR2")))
 
-#'## H6: Explicit attitudes are more affected by games using Perspective-taking and Meaningful feedback (persuasive mechanic = perspective-taking || procedural rhetorics || economical model || reward system as persuasive mechanics than by other game mechanics (persuasive mechanic = Stereotype Rehearsal)).
+#'## H6: Explicit attitudes are more affected by games using Perspective-taking and Meaningful feedback as persuasive mechanics than by other game mechanics.
 #'
 rmaModPersMechExpl <- datExplicit %$% rma.mv(yi ~ 0 + factor(persuasiveMechanicExpl), V = viMatrixExplicit, method = "REML", random = ~ 1|study/result, sparse = TRUE)
 (rveModPersMechExpl <- datExplicit %$% list("test" = coef_test(rmaModPersMechExpl, vcov = "CR2", test = "Satterthwaite", cluster = study), 
                                                                        "CIs" = conf_int(rmaModPersMechExpl, vcov = "CR2", test = "Satterthwaite", cluster = study),
                                                                        "RVE Wald test" = Wald_test(rmaModPersMechExpl, constraints = constrain_equal(1:2), vcov = "CR2")))
 
-#'#### H6: Exploratory analysis, comparing only Perspective-taking (= 1) vs Stereotype rehearsal (= 0).
+#'#### H6: Exploratory analysis, comparing only Perspective-taking vs Stereotype rehearsal.
 viMatrixExpl2 <- datExplicit %>% filter(persuasive_mechanic %in% c("Perspective-taking", "Stereotype rehearsal")) %$% impute_covariance_matrix(vi, cluster = study, r = rho)
 rmaModPersMechExpl2 <- datExplicit %>% filter(persuasive_mechanic %in% c("Perspective-taking", "Stereotype rehearsal")) %$% rma.mv(yi ~ 0 + factor(persuasiveMechanicExpl), V = viMatrixExpl2, method = "REML", random = ~ 1|study/result, sparse = TRUE)
 (rveModPersMechExpl2 <- datExplicit %>% filter(persuasive_mechanic %in% c("Perspective-taking", "Stereotype rehearsal")) %$% list("test" = coef_test(rmaModPersMechExpl2, vcov = "CR2", test = "z", cluster = study), 
@@ -370,14 +369,14 @@ rmaModPersMechExpl2 <- datExplicit %>% filter(persuasive_mechanic %in% c("Perspe
                                             "RVE Wald test" = Wald_test(rmaModPersMechExpl2, constraints = constrain_equal(1:2), vcov = "CR2")))
 
 
-#'## H7: Action games (gamegenre =”action game” || “action violent game”) have a larger effect on implicit attitudes than on explicit attitudes.
+#'## H7: Action games have a larger effect on implicit attitudes than on explicit attitudes.
 viMatrixAction <- data %>% filter(gamegenre %in% c("action game", "action violent game")) %$% impute_covariance_matrix(vi, cluster = study, r = rho)
 rmaModActionGames <- data %>% filter(gamegenre %in% c("action game", "action violent game")) %$% rma.mv(yi ~ 0 + factor(Att_type_exp_imp), V = viMatrixAction, method = "REML", random = ~ 1|study/result, sparse = TRUE)
 (rveModActionGames <- data %>% filter(gamegenre %in% c("action game", "action violent game")) %$% list("test" = coef_test(rmaModActionGames, vcov = "CR2", test = "z", cluster = study), 
                                                                                                        "CIs" = conf_int(rmaModActionGames, vcov = "CR2", test = "z", cluster = study),
                                                                                                        "RVE Wald test" = Wald_test(rmaModActionGames, constraints = constrain_equal(1:2), vcov = "CR2")))
 
-#'## H8: Non-action games (gamegenre=”simulation/strategy” || “adventure”) have a larger effect on explicit attitudes than action games. 
+#'## H8: Non-action games have a larger effect on explicit attitudes than action games. 
 rmaModNonactExpl <- datExplicit %$% rma.mv(yi ~ 0 + factor(gamegenreBinary), V = viMatrixExplicit, method = "REML", random = ~ 1|study/result, sparse = TRUE)
 (rveModNonactExpl <- datExplicit %$% list("test" = coef_test(rmaModNonactExpl, vcov = "CR2", test = "z", cluster = study), 
                                                                      "CIs" = conf_int(rmaModNonactExpl, vcov = "CR2", test = "z", cluster = study),
@@ -509,9 +508,9 @@ rmaModRoB <- data %$% rma.mv(yi ~ 0 + factor(overallBias), V = viMatrix, method 
 
 #'### Excluding effects based on inconsistent means or SDs
 #' 
-#' GRIM test, testing the inconsistencies in means
+#'#### GRIM test, testing the inconsistencies in means
 table(data$inconsistenciesCountGRIM, useNA = "always")
-#' GRIMMER test, testing the inconsistencies in SD (and means)
+#'#### GRIMMER test, testing the inconsistencies in SD (and means)
 table(data$inconsistenciesCountGRIMMER, useNA = "always")
 rmaModIncon <- data %$% rma.mv(yi ~ 0 + factor(as.logical(inconsistenciesCountGRIMMER)), V = viMatrix, method = "REML", random = ~ 1|study/result, sparse = TRUE)
 (rveModIncon <- data %$% list("Count of GRIM/GRIMMER inconsistencies" = table(as.logical(data$inconsistenciesCountGRIMMER)),
@@ -535,3 +534,4 @@ statcheck %>% filter(Error == TRUE) %>% select(Source) %>% unique() %>% nrow()/l
 
 # Record session info
 sessionInfo()
+save.image(file='sessionObjects.RData')

@@ -1,3 +1,16 @@
+#' ---
+#' title: "Inter-rater agreement for Video Games and Attitude Change: A Meta-analysis"
+#' author: ""
+#' date: "`r Sys.Date()`"
+#' output:
+#'    html_document:
+#'       toc: true
+#'       toc_float: true
+#'       code_folding: show
+#'       fig_retina: 2
+#' always_allow_html: yes
+#' ---
+
 #+ setup, include=FALSE
 library(readxl)
 library(tidyverse)
