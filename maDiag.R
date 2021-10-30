@@ -1,7 +1,5 @@
 # Outlier diagnostics -----------------------------------------------------
 
-#'# For mindfulness studies
-
 #+eval = FALSE
 # Initial outlier diagnostics
 # Univariate MA
@@ -13,7 +11,7 @@ baujat(ma.uni, symbol = "slab")
 # dat %>% filter(result == ) %>% view()
 
 #+eval = FALSE
-#fit FE model to all possible subsets
+# fit FE model to all possible subsets
 # gosh.plot <- gosh(ma.uni, progbar = TRUE, subsets = 1000, parallel = "multicore")
 # plot(gosh.plot, out = , breaks = 50) # Testing the influence of single outliers
 

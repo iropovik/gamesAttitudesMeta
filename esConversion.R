@@ -1,12 +1,3 @@
-# Vymazat posledny stlpec a spodne riadky
-# odstranit vsetky "~?" a ";" a "dissertation"
-#odstranit . v F riadok 19; skryte znaky na konci v mEXP riadok 6-9
-#vymazat riadok 131
-# remove "in press"
-# NIKDY NEKOPIROVAT HODNOTY DO TABULKY
-# risk of bias stlpce vyhodit z data
-# premenovat SE_Exp a SE_ctrl na seExp
-
 # Read in the data
 # install required R libraries if not installed already
 list.of.packages <- c("car", "tidyverse", "psych", "metafor", "esc", "lme4", "ggplot2", "knitr", "puniform", "kableExtra", "lmerTest", "pwr", "Amelia", "multcomp", "magrittr", "readxl")
@@ -21,7 +12,6 @@ dat <- read_excel("codingSheet.xlsx", sheet = "Data")
 #str(dat)
 #view(dat)
 dat <- dat %>% modify_at(., .at = c("pubYear"), .f = ~as.numeric(as.character(.)))
-#grepl("^[-]{0,1}[0-9]{0,}.{0,1}[0-9]{1,}$", dat$mExp)
 
 # Some data wrangling to get the right type of data (formatting of the raw dataset in Excel introduces a lot of junk otherwise)
 dat$pReported <- as.numeric(as.character(gsub("[^0-9.]", "", dat$pReported)))
@@ -104,11 +94,6 @@ dat <- dat %>% mutate(finalDesign = ifelse(!is.na(r) & !is.na(df2), "cor", final
 # Show the converted ESs
 dat %>% filter(finalDesign == "cor") %>% select(yiConv, r, rVar, viConv, p, ni, dReported)
 
- 
-# # # PaperID 71 used mixed-effects models, couldn't convert, so using the reported d (converted to g)
-# dat <- dat %>% mutate(gConv = ifelse(paperID == 71, (1 - (3/(4*reportedOverallN - 3))) * dReported, gConv),
-#                       gVarConv = ifelse(paperID == 71, (1 - (3/(4*reportedOverallN - 3))) * ((reportedOverallN)/(reportedOverallN/2 * reportedOverallN/2) + (dReported^2)/(2 * (reportedOverallN))), gVarConv)) 
-
 # Variable computations
 # # Multiply the ES by -1 if not in the opposite direction
 dat <- dat %>% mutate(yi = ifelse(is.na(yi) & (!is.na(yiConv) & !is.na(predictedDirection)), predictedDirection * yiConv, yi),
@@ -135,17 +120,4 @@ datImplicit <- data %>% filter(Att_type_exp_imp == 0)
 
 # Remove outliers (based on the results from the maDiag script)
 # dat <- dat %>% filter(!result %in% c())
-
-# dat %>% select(label, yi, vi, yiConv, dReported, predictedDirection, mExp, mCtrl, sdExp, sdCtrl, seExp, seCtrl, nExp, nCtrl, df2, F, t, r) %>% view()
-
-# dat %>% filter(ni != nTotal) %>% select(ni, nTotal, df2, nExp, nCtrl)
-# dat %>% filter(abs(dReported - gConv) > .2) %>% select(result, gConv, dReported)
-# 
-# dat$studentSample <- ifelse(dat$sampleType == "student", 1, ifelse(dat$sampleType == "general", 0, NA))
-
-# Remove outliers (based on the results from the maDiag script)
-# dat <- dat %>% filter(!result %in% c(194))
-
-# Create dat objects
-# Mood and overall effect data objects
 

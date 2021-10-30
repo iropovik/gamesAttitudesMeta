@@ -1,7 +1,3 @@
-# Pocket 
-# print(deparse(substitute(df)))
-# do.call(rbind, x)
-
 # Load libraries (and install if not installed already)
 list.of.packages <- c("car", "reshape", "tidyverse", "tidyr", "psych", "metafor", "meta", "dmetar", "esc", "lme4", "ggplot2", "knitr", "puniform", "kableExtra", "lmerTest", "pwr", "Amelia", "multcomp", "magrittr", "weightr", "clubSandwich", "ddpcr", "poibin", "robvis", "RoBMA")
 new.packages <- list.of.packages[!(list.of.packages %in% installed.packages()[,"Package"])]
@@ -157,7 +153,7 @@ bma <- function(data, seedNo = 1, chainsNo = robmaChains, nIterationBMA = robmaS
                                                                       chains = chainsNo, sample = nIterationBMA, burnin = ifelse(2*nIterationBMA/5 < 50, 50, 2*nIterationBMA/5), parallel = TRUE)), 
            error = function(e) NULL)
 }
-        
+
 # PET-PEESE ---------------------------------------------------------------
 
 #PET-PEESE with 4/3PSM as the conditional estimator instead of PET. 
@@ -452,12 +448,12 @@ grim <- function(dat){
   for(i in 1:nrow(datGRIM)){
     outGrimM1[i] <- grimTest(n = datGRIM[i,]$nExp, mean = datGRIM[i,]$mExp, items = datGRIM[i,]$items, decimals = 2)
     outGrimM2[i] <- grimTest(n = datGRIM[i,]$nCtrl, mean = datGRIM[i,]$mCtrl, items = datGRIM[i,]$items, decimals = 2)
-    }
+  }
   
   datGRIM$outGrimM1 <- outGrimM1
   datGRIM$outGrimM2 <- outGrimM2
   datGRIM$inconsistenciesCountGRIM <- datGRIM %$% abs(outGrimM1 + outGrimM2 - 2)
-
+  
   dat <<- datGRIM %>% 
     select(result, inconsistenciesCountGRIM) %>%
     left_join(dat, ., by = "result", keep = FALSE)
