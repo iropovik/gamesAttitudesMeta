@@ -425,7 +425,7 @@ dfNonRestricted <- data %>% filter(sampleRestricted == 0, !is.na(vi)) %>% nrow()
 #' F-statistics
 viNonRestricted/viRestricted
 #' F-test p-value
-2 * (1 - pf(viNonRestricted/viRestricted, df1 = dfNonRestricted, df2 = dfRestricted, lower.tail = FALSE))
+(1 - pf(viNonRestricted/viRestricted, df1 = dfNonRestricted, df2 = dfRestricted))
 
 #'### Year of Publication
 #'
