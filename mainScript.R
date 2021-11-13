@@ -370,9 +370,9 @@ rmaModPersMechExpl2 <- datExplicit %>% filter(persuasive_mechanic %in% c("Perspe
 
 
 #'## H7: Action games have a larger effect on implicit attitudes than on explicit attitudes.
-viMatrixAction <- data %>% filter(gamegenre %in% c("action game", "action violent game")) %$% impute_covariance_matrix(vi, cluster = study, r = rho)
-rmaModActionGames <- data %>% filter(gamegenre %in% c("action game", "action violent game")) %$% rma.mv(yi ~ 0 + factor(Att_type_exp_imp), V = viMatrixAction, method = "REML", random = ~ 1|study/result, sparse = TRUE)
-(rveModActionGames <- data %>% filter(gamegenre %in% c("action game", "action violent game")) %$% list("test" = coef_test(rmaModActionGames, vcov = "CR2", test = "z", cluster = study), 
+viMatrixAction <- data %>% filter(gamegenre %in% c("Action game", "Action violent game")) %$% impute_covariance_matrix(vi, cluster = study, r = rho)
+rmaModActionGames <- data %>% filter(gamegenre %in% c("Action game", "Action violent game")) %$% rma.mv(yi ~ 0 + factor(Att_type_exp_imp), V = viMatrixAction, method = "REML", random = ~ 1|study/result, sparse = TRUE)
+(rveModActionGames <- data %>% filter(gamegenre %in% c("Action game", "Action violent game")) %$% list("test" = coef_test(rmaModActionGames, vcov = "CR2", test = "z", cluster = study), 
                                                                                                        "CIs" = conf_int(rmaModActionGames, vcov = "CR2", test = "z", cluster = study),
                                                                                                        "RVE Wald test" = Wald_test(rmaModActionGames, constraints = constrain_equal(1:2), vcov = "CR2")))
 
