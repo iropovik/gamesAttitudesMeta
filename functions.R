@@ -219,7 +219,7 @@ waapWLS <- function(yi, vi, est = c("WAAP-WLS"), long = FALSE) {
   
   # 1. determine which studies are in the top-N set
   
-  # "Here, we employ FE (or, equivalently, WLS) as the proxy for ‘true’ effect."
+  # FE model (or, equivalently, WLS) as the proxy for true effect.
   WLS.all  <- WLS.est(yi, vi, long=FALSE)
   true.effect <- WLS.all$estimate
   
@@ -227,9 +227,6 @@ waapWLS <- function(yi, vi, est = c("WAAP-WLS"), long = FALSE) {
   powered <- true.effect/2.8 >= sqrt(vi)
   
   # 2. compute the unrestricted weighted average (WLS) rma of either all or only adequatly powered studies
-  # "Thus, the estimate we employ here is a hybrid between WAAP and WLS; thereby called, ‘WAAP-WLS’"
-  # "If there is no or only one adequately powered study in a systematic review, WAAP’s standard error and confidence interval are undefined. In this case, we compute WLS across the entire research record."
-  # "When there are two or more adequately powered studies, WAAP is calculated using WLS’s formula from this subset of adequately powered studies."
   # Combined estimator: WAAP-WLS	
   kAdequate <- sum(powered,na.rm=T)
   
